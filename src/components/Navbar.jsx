@@ -52,7 +52,10 @@ const Navbar = () => {
             <NavItem>EVENTS</NavItem>
             <NavItem>GALLERY</NavItem>
             <NavItem>Q & A</NavItem>
-            <Link to="/register" style={{ textDecoration: "none" }}>
+            <Link
+              to="/register"
+              style={{ textDecoration: "none", color: "black" }}
+            >
               <NavItem>
                 <i class="fa-solid fa-circle-user"></i>
               </NavItem>
