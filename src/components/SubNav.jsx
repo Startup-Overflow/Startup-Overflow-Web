@@ -7,10 +7,10 @@ const SubNav = () => {
         <Link to="/" style={{ textDecoration: "none" }}>
           Mentors
         </Link>
-        <Link to="/" style={{ textDecoration: "none" }}>Partners</Link>
-        <Link to="/" style={{ textDecoration: "none" }}>Investors</Link>
-        <Link to="/" style={{ textDecoration: "none" }}>Incubators</Link>
-        <Link to="/" style={{ textDecoration: "none" }}>Women Entrepreneurs</Link>
+        <Link to="/">Partners</Link>
+        <Link to="/">Investors</Link>
+        <Link to="/">Incubators</Link>
+        <Link to="/">Women Entrepreneurs</Link>
         <input
           type="text"
           placeholder="search anything"
