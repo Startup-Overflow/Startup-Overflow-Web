@@ -51,6 +51,7 @@ const Navbar = () => {
             <NavItem>EVENTS</NavItem>
             <NavItem>GALLERY</NavItem>
             <NavItem>Q & A</NavItem>
+            <NavItem><i class="fa-solid fa-circle-user"></i></NavItem>
           </Right>
         </Wrapper>
       </Container>
