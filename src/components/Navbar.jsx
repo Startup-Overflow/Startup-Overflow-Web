@@ -6,7 +6,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  padding: 12px 20px;
+  padding: 12px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,6 +32,7 @@ const NavItem = styled.div`
   font-size: 20px;
   cursor: pointer;
   margin-left: 15px;
+  margin-right: 10px;
 `;
 
 const Navbar = () => {
@@ -51,7 +52,9 @@ const Navbar = () => {
             <NavItem>EVENTS</NavItem>
             <NavItem>GALLERY</NavItem>
             <NavItem>Q & A</NavItem>
-            <NavItem><i class="fa-solid fa-circle-user"></i></NavItem>
+            <NavItem>
+              <i class="fa-solid fa-circle-user"></i>
+            </NavItem>
           </Right>
         </Wrapper>
       </Container>

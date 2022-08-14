@@ -42,36 +42,65 @@ const Login = () => {
         <Wrapper>
           <SubNav />
           <LoginWrapper>
-          <h1 style={{textAlign: "center", color: "#f97316"}}>Let's Sign In</h1>
-          <h4 style={{textAlign: "center", color: "blue"}}>Welcome to <span style={{color: "#f97316"}}>Startup</span> <span style={{color: "green"}}>Overflow</span></h4>
-          <Link to="/register" style={{textAlign: "right"}}>
-            Signup
-          </Link>
-          <form onSubmit={loginSubmitHandler} style={{display: "flex", flexDirection: "column", padding: "0rem 5rem"}}>
-            <input
-              value={username}
-              required
-              type="text"
-              placeholder="Username"
-              onChange={(e) => {
-                setUsername(e.target.value);
+            <h1 style={{ textAlign: "center", color: "#f97316" }}>
+              Let's Sign In
+            </h1>
+            <h4 style={{ textAlign: "center", color: "blue" }}>
+              Welcome to <span style={{ color: "#f97316" }}>Startup</span>{" "}
+              <span style={{ color: "green" }}>Overflow</span>
+            </h4>
+            <Link to="/register" style={{ textAlign: "right" }}>
+              Signup
+            </Link>
+            <form
+              onSubmit={loginSubmitHandler}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                padding: "0rem 5rem",
               }}
-              style={{padding: "1rem", marginBottom: "1rem", border: "none", borderRadius: "0.5rem"}}
-            />
-            <input
-              value={password}
-              required
-              type="password"
-              placeholder="Password"
-              onChange={(e) => {
-                setPassword(e.target.value);
-              }}
-              style={{padding: "1rem",border: "none", borderRadius: "0.5rem"}}
-            />
-            <input type="checkbox" name="" id="" />
-            <label htmlFor="">Keep me signed in</label>
-            <button type="submit">Sign In</button>
-          </form>
+            >
+              <input
+                value={username}
+                required
+                type="text"
+                placeholder="Username"
+                onChange={(e) => {
+                  setUsername(e.target.value);
+                }}
+                style={{
+                  padding: "1rem",
+                  marginBottom: "1rem",
+                  border: "none",
+                  borderRadius: "0.5rem",
+                  boxShadow: "rgba(100, 100, 111, 0.2)0px 7px 29px 0px",
+                  fontSize: "20px",
+                  opacity: "0.6",
+                  margin: "20px 0px",
+                }}
+              />
+              <input
+                value={password}
+                required
+                type="password"
+                placeholder="Password"
+                onChange={(e) => {
+                  setPassword(e.target.value);
+                }}
+                style={{
+                  padding: "1rem",
+                  border: "none",
+                  borderRadius: "0.5rem",
+                  boxShadow: "rgba(100, 100, 111, 0.2)0px 7px 29px 0px",
+                  fontSize: "20px",
+                  opacity: "0.6",
+                  margin: "20px 0px",
+                }}
+              />
+              <input type="checkbox" name="" id="" />
+              <label htmlFor="">Keep me signed in</label>
+              <button type="submit">Sign In</button>
+            </form>
           </LoginWrapper>
         </Wrapper>
       </Container>
