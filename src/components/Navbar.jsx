@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Logo from "../imgs/logo.png";
+import { Link } from "react-router-dom";
 const Container = styled.div`
   height: 0px;
 `;
@@ -50,6 +51,7 @@ const Navbar = () => {
             <NavItem>EVENTS</NavItem>
             <NavItem>GALLERY</NavItem>
             <NavItem>Q & A</NavItem>
+            <i class="fa-solid fa-circle-user"></i>
           </Right>
         </Wrapper>
       </Container>
