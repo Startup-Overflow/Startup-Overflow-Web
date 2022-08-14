@@ -42,15 +42,15 @@ const Login = () => {
         <Wrapper>
           <SubNav />
           <LoginWrapper>
-            <h1 style={{ textAlign: "center", color: "#f97316" }}>
+            <h1 style={{ textAlign: "center", color: "#fb923c" }}>
               Let's Sign In
             </h1>
-            <h4 style={{ textAlign: "center", color: "blue" }}>
-              Welcome to <span style={{ color: "#f97316" }}>Startup</span>{" "}
-              <span style={{ color: "green" }}>Overflow</span>
-            </h4>
-            <Link to="/register" style={{ textAlign: "right" }}>
-              Signup
+            <div style={{ textAlign: "center", color: "blue" }}>
+              Welcome to <span style={{ color: "#fb923c", fontSize:"1.5rem"}}>Startup</span>{" "}
+              <span style={{ color: "#22c55e",fontSize:"1.5rem"}}>Overflow</span>
+            </div>
+            <Link to="/register" style={{ textAlign: "right" , paddingRight: "5rem", color: "blue"}}>
+              Sign Up
             </Link>
             <form
               onSubmit={loginSubmitHandler}
@@ -69,13 +69,11 @@ const Login = () => {
                   setUsername(e.target.value);
                 }}
                 style={{
-                  padding: "1rem",
+                  padding: "0.8rem",
                   marginBottom: "1rem",
                   border: "none",
-                  borderRadius: "0.5rem",
-                  boxShadow: "rgba(100, 100, 111, 0.2)0px 7px 29px 0px",
+                  borderRadius: "0.3rem",
                   fontSize: "20px",
-                  opacity: "0.6",
                   margin: "20px 0px",
                 }}
               />
@@ -88,18 +86,18 @@ const Login = () => {
                   setPassword(e.target.value);
                 }}
                 style={{
-                  padding: "1rem",
+                  padding: "0.8rem",
                   border: "none",
-                  borderRadius: "0.5rem",
-                  boxShadow: "rgba(100, 100, 111, 0.2)0px 7px 29px 0px",
+                  borderRadius: "0.3rem",
                   fontSize: "20px",
-                  opacity: "0.6",
                   margin: "20px 0px",
                 }}
               />
+              <div style={{marginBottom: "1rem"}}>
               <input type="checkbox" name="" id="" />
-              <label htmlFor="">Keep me signed in</label>
-              <button type="submit">Sign In</button>
+              <label htmlFor="" style={{color: "black"}}>Keep me signed in</label>
+              </div>
+              <button type="submit"style={{backgroundColor: "#fb923c", border: "none", padding: "0.8rem", color: "white", fontSize:"large", borderRadius: "0.3rem"}} >Sign In</button>
             </form>
           </LoginWrapper>
         </Wrapper>
