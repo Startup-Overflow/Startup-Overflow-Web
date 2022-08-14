@@ -5,7 +5,7 @@ const SubNav = () => {
     <>
       <div style={{ display: "flex", flexDirection: "row" }}>
         <Link to="/" style={{ textDecoration: "none" }}>
-          Mentors
+          Mentor
         </Link>
         <Link to="/">Partners</Link>
         <Link to="/">Investors</Link>
