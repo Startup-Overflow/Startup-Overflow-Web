@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  padding: 100px 30px;
+  margin: 100px 30px;
 `;
 
 const Register = () => {
