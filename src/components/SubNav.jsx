@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const SubNav = () => {
   return (
     <>
-      <div style={{ display: "flex", flexDirection: "row", padding: "0.5rem 0rem"}}>
+      <div style={{ display: "flex", flexDirection: "row"}}>
         <Link to="/" style={{ textDecoration: "none" }}>
           Mentors
         </Link>
