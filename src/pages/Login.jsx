@@ -17,6 +17,11 @@ const Wrapper = styled.div`
   margin: 100px 30px;
 `;
 
+const LoginWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -36,12 +41,13 @@ const Login = () => {
       <Container>
         <Wrapper>
           <SubNav />
-          <h2>Let's Sign In</h2>
-          <h4>Welcome to Startup Overflow</h4>
-          <Link to="/register" style={{ textDecoration: "none" }}>
+          <LoginWrapper>
+          <h1 style={{textAlign: "center", color: "#f97316"}}>Let's Sign In</h1>
+          <h4 style={{textAlign: "center", color: "blue"}}>Welcome to <span style={{color: "#f97316"}}>Startup</span> <span style={{color: "green"}}>Overflow</span></h4>
+          <Link to="/register" style={{textAlign: "right"}}>
             Signup
           </Link>
-          <form onSubmit={loginSubmitHandler}>
+          <form onSubmit={loginSubmitHandler} style={{display: "flex", flexDirection: "column", padding: "0rem 5rem"}}>
             <input
               value={username}
               required
@@ -50,6 +56,7 @@ const Login = () => {
               onChange={(e) => {
                 setUsername(e.target.value);
               }}
+              style={{padding: "1rem", marginBottom: "1rem", border: "none", borderRadius: "0.5rem"}}
             />
             <input
               value={password}
@@ -59,11 +66,13 @@ const Login = () => {
               onChange={(e) => {
                 setPassword(e.target.value);
               }}
+              style={{padding: "1rem",border: "none", borderRadius: "0.5rem"}}
             />
             <input type="checkbox" name="" id="" />
             <label htmlFor="">Keep me signed in</label>
             <button type="submit">Sign In</button>
           </form>
+          </LoginWrapper>
         </Wrapper>
       </Container>
     </>
