@@ -3,11 +3,7 @@ import { Link } from "react-router-dom";
 const SubNav = () => {
   return (
     <>
-<<<<<<< HEAD
       <div style={{ display: "flex", flexDirection: "row" }}>
-=======
-      <div style={{ display: "flex", flexDirection: "row"}}>
->>>>>>> 1d91a0811ef5c57bdf15cc71e587f2b93d331f2b
         <Link to="/" style={{ textDecoration: "none" }}>
           Mentor
         </Link>
