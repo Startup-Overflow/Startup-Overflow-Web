@@ -3,6 +3,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import registerBg from "../imgs/registerBg.png";
+import SubNav from "../components/SubNav";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -13,6 +14,12 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   margin: 100px 30px;
+`;
+
+const RegisterWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
 `;
 
 const Register = () => {
@@ -45,8 +52,16 @@ const Register = () => {
       <Navbar />
       <Container>
         <Wrapper>
-          <h2>Please Sign Up</h2>
-          <form onSubmit={registerSubmitHandler}>
+          <SubNav />
+          <RegisterWrapper>
+          <h1 style={{ textAlign: "center", color: "#fb923c" }}>Please Sign Up</h1>
+          <form onSubmit={registerSubmitHandler}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            padding: "0rem 5rem",
+          }}>
+            <div style={{marginBottom: "0.8rem"}}>
             <input
               type="text"
               placeholder="First Name"
@@ -54,6 +69,14 @@ const Register = () => {
               value={fName}
               onChange={(e) => {
                 setFName(e.target.value);
+              }}
+              style={{
+                padding: "0.8rem",
+                marginBottom: "0.5rem",
+                border: "none",
+                borderRadius: "0.3rem",
+                fontSize: "20px",
+                marginRight:"1rem"
               }}
             />
             <input
@@ -64,7 +87,15 @@ const Register = () => {
               onChange={(e) => {
                 setLName(e.target.value);
               }}
+              style={{
+                padding: "0.8rem",
+                marginBottom: "0.5rem",
+                border: "none",
+                borderRadius: "0.3rem",
+                fontSize: "20px",
+              }}
             />
+            </div>
             <input
               type="text"
               placeholder="Username"
@@ -72,6 +103,13 @@ const Register = () => {
               value={uName}
               onChange={(e) => {
                 setUName(e.target.value);
+              }}
+              style={{
+                padding: "0.8rem",
+                marginBottom: "0.8rem",
+                border: "none",
+                borderRadius: "0.3rem",
+                fontSize: "20px",
               }}
             />
             <input
@@ -82,7 +120,15 @@ const Register = () => {
               onChange={(e) => {
                 setMail(e.target.value);
               }}
+              style={{
+                padding: "0.8rem",
+                marginBottom: "0.8rem",
+                border: "none",
+                borderRadius: "0.3rem",
+                fontSize: "20px",
+              }}
             />
+            <div style={{marginBottom: "0.5rem"}}>
             <input
               type="password"
               placeholder="Password"
@@ -90,6 +136,14 @@ const Register = () => {
               value={pass}
               onChange={(e) => {
                 setPass(e.target.value);
+              }}
+              style={{
+                padding: "0.8rem",
+                marginBottom: "0.5rem",
+                border: "none",
+                borderRadius: "0.3rem",
+                fontSize: "20px",
+                marginRight:"1rem"
               }}
             />
             <input
@@ -100,12 +154,21 @@ const Register = () => {
               onChange={(e) => {
                 setCPass(e.target.value);
               }}
+              style={{
+                padding: "0.8rem",
+                marginBottom: "0.5rem",
+                border: "none",
+                borderRadius: "0.3rem",
+                fontSize: "20px",
+              }}
             />
-            <Link to="/login" style={{ textDecoration: "none" }}>
+            </div>
+            <Link to="/login" style={{ textAlign: "right" , color: "white", textDecoration: "none"}}>
               Already have an Account
             </Link>
-            <button type="submit">Sign Up</button>
+            <button type="submit" style={{backgroundColor: "#fb923c", border: "none", padding: "0.8rem", color: "white", fontSize:"large", borderRadius: "0.3rem" ,marginTop: "0.5rem"}}>Sign Up</button>
           </form>
+          </RegisterWrapper>
         </Wrapper>
       </Container>
     </>
