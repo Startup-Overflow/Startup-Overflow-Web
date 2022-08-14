@@ -15,7 +15,11 @@ const SubNav = () => {
           <input
             type="text"
             placeholder="search anything"
-            style={{ background: "transparent", border: "none" }}
+            style={{
+              background: "transparent",
+              border: "none",
+              outline: "none",
+            }}
           />
           <i
             class="fa-solid fa-magnifying-glass"
