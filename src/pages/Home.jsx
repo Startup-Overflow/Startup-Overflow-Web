@@ -1,5 +1,7 @@
 import homeBg from "../imgs/homeBg.png";
 import styled from "styled-components";
+import Navbar from "../components/Navbar";
+import SubNav from "../components/SubNav";
 
 const Container = styled.div`
   width: 100vw;
@@ -16,8 +18,11 @@ const Wrapper = styled.div`
 const Home = () => {
   return (
     <>
+      <Navbar />
       <Container>
-        <Wrapper>check</Wrapper>
+        <Wrapper>
+          <SubNav />
+        </Wrapper>
       </Container>
     </>
   );

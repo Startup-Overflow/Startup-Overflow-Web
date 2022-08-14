@@ -11,11 +11,17 @@ const SubNav = () => {
         <Link to="/">Investors</Link>
         <Link to="/">Incubators</Link>
         <Link to="/">Women Entrepreneurs</Link>
-        <input
-          type="text"
-          placeholder="search anything"
-          style={{ background: "transparent" }}
-        />
+        <div style={{ border: "1px solid black" }}>
+          <input
+            type="text"
+            placeholder="search anything"
+            style={{ background: "transparent", border: "none" }}
+          />
+          <i
+            class="fa-solid fa-magnifying-glass"
+            style={{ cursor: "pointer" }}
+          ></i>
+        </div>
       </div>
     </>
   );
