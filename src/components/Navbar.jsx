@@ -41,7 +41,7 @@ const Navbar = () => {
       <Container>
         <Wrapper>
           <Left>
-            <Link to="/home">
+            <Link to="/">
               <Img src={Logo} />
             </Link>
           </Left>
@@ -52,9 +52,11 @@ const Navbar = () => {
             <NavItem>EVENTS</NavItem>
             <NavItem>GALLERY</NavItem>
             <NavItem>Q & A</NavItem>
-            <NavItem>
-              <i class="fa-solid fa-circle-user"></i>
-            </NavItem>
+            <Link to="/register" style={{ textDecoration: "none" }}>
+              <NavItem>
+                <i class="fa-solid fa-circle-user"></i>
+              </NavItem>
+            </Link>
           </Right>
         </Wrapper>
       </Container>
