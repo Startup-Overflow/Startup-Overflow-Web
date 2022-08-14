@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const SubNav = () => {
   return (
     <>
-      <div style={{ display: "flex", flexDirection: "row", padding: "0.5rem 0rem"}}>
+      <div style={{ display: "flex", flexDirection: "row" }}>
         <Link to="/" style={{ textDecoration: "none" }}>
           Mentor
         </Link>
@@ -11,11 +11,21 @@ const SubNav = () => {
         <Link to="/">Investors</Link>
         <Link to="/">Incubators</Link>
         <Link to="/">Women Entrepreneurs</Link>
-        <input
-          type="text"
-          placeholder="search anything"
-          style={{ background: "transparent" }}
-        />
+        <div style={{ border: "1px solid black" }}>
+          <input
+            type="text"
+            placeholder="search anything"
+            style={{
+              background: "transparent",
+              border: "none",
+              outline: "none",
+            }}
+          />
+          <i
+            class="fa-solid fa-magnifying-glass"
+            style={{ cursor: "pointer" }}
+          ></i>
+        </div>
       </div>
     </>
   );
