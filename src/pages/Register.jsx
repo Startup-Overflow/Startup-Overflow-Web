@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
-import bg from "../imgs/bg.png";
+import registerBg from "../imgs/registerBg.png";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-image: url(${bg});
+  background-image: url(${registerBg});
   background-size: cover;
   display: flex;
 `;

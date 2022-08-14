@@ -1,13 +1,14 @@
-import bg from "../imgs/bg.png";
+import loginBg from "../imgs/loginBg.png";
 import styled from "styled-components";
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
+import SubNav from "../components/SubNav";
 
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-image: url(${bg});
+  background-image: url(${loginBg});
   background-size: cover;
   display: flex;
 `;
@@ -29,12 +30,12 @@ const Login = () => {
     setUsername("");
     setPassword("");
   };
-  console.log(username);
   return (
     <>
       <Navbar />
       <Container>
         <Wrapper>
+          <SubNav />
           <h2>Let's Sign In</h2>
           <h4>Welcome to Startup Overflow</h4>
           <Link to="/register" style={{ textDecoration: "none" }}>
