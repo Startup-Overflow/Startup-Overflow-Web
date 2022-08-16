@@ -4,6 +4,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import SubNav from "../components/SubNav";
+import Host from "../Host";
 
 const Container = styled.div`
   width: 100vw;
@@ -25,8 +26,10 @@ const LoginWrapper = styled.div`
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [redirect, setRedirect] = useState(false);
+  const [msg, setMsg] = useState("");
 
-  const loginSubmitHandler = (e) => {
+  const loginSubmitHandler = async (e) => {
     e.preventDefault();
     const loginData = {};
     loginData.username = username;
@@ -34,6 +37,22 @@ const Login = () => {
     console.log(loginData);
     setUsername("");
     setPassword("");
+    const response = await fetch(`${Host}/users/login/`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        username,
+        password,
+      }),
+    });
+    const content = await response.json();
+    if (typeof content.token !== "undefined") {
+      localStorage.setItem("token", content.token);
+      console.log("token type", content.token);
+      setRedirect(true);
+    } else {
+      setMsg("Invalid Username or Password");
+    }
   };
   return (
     <>
@@ -46,10 +65,22 @@ const Login = () => {
               Let's Sign In
             </h1>
             <div style={{ textAlign: "center", color: "blue" }}>
-              Welcome to <span style={{ color: "#fb923c", fontSize:"1.5rem"}}>Startup</span>{" "}
-              <span style={{ color: "#22c55e",fontSize:"1.5rem"}}>Overflow</span>
+              Welcome to{" "}
+              <span style={{ color: "#fb923c", fontSize: "1.5rem" }}>
+                Startup
+              </span>{" "}
+              <span style={{ color: "#22c55e", fontSize: "1.5rem" }}>
+                Overflow
+              </span>
             </div>
-            <Link to="/register" style={{ textAlign: "right" , paddingRight: "5rem", color: "blue"}}>
+            <Link
+              to="/register"
+              style={{
+                textAlign: "right",
+                paddingRight: "5rem",
+                color: "blue",
+              }}
+            >
               Sign Up
             </Link>
             <form
@@ -77,6 +108,7 @@ const Login = () => {
                   margin: "20px 0px",
                 }}
               />
+              <p style={{ color: "red", fontSize: "small" }}>{msg}</p>
               <input
                 value={password}
                 required
@@ -93,11 +125,25 @@ const Login = () => {
                   margin: "20px 0px",
                 }}
               />
-              <div style={{marginBottom: "1rem"}}>
-              <input type="checkbox" name="" id="" />
-              <label htmlFor="" style={{color: "black"}}>Keep me signed in</label>
+              <div style={{ marginBottom: "1rem" }}>
+                <input type="checkbox" name="" id="" />
+                <label htmlFor="" style={{ color: "black" }}>
+                  Keep me signed in
+                </label>
               </div>
-              <button type="submit"style={{backgroundColor: "#fb923c", border: "none", padding: "0.8rem", color: "white", fontSize:"large", borderRadius: "0.3rem"}} >Sign In</button>
+              <button
+                type="submit"
+                style={{
+                  backgroundColor: "#fb923c",
+                  border: "none",
+                  padding: "0.8rem",
+                  color: "white",
+                  fontSize: "large",
+                  borderRadius: "0.3rem",
+                }}
+              >
+                Sign In
+              </button>
             </form>
           </LoginWrapper>
         </Wrapper>
