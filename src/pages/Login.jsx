@@ -50,7 +50,9 @@ const Login = () => {
       localStorage.setItem("token", content.token);
       console.log("token type", content.token);
       setRedirect(true);
+      setMsg("Successfully Logged in");
     } else {
+      setRedirect(false);
       setMsg("Invalid Username or Password");
     }
   };
@@ -108,7 +110,9 @@ const Login = () => {
                   margin: "20px 0px",
                 }}
               />
-              <p style={{ color: "red", fontSize: "small" }}>{msg}</p>
+              {!redirect ? (
+                <p style={{ color: "red", fontSize: "small" }}>{msg}</p>
+              ) : null}
               <input
                 value={password}
                 required
@@ -131,6 +135,9 @@ const Login = () => {
                   Keep me signed in
                 </label>
               </div>
+              {redirect ? (
+                <p style={{ color: "green", fontSize: "small" }}>{msg}</p>
+              ) : null}
               <button
                 type="submit"
                 style={{
@@ -140,6 +147,7 @@ const Login = () => {
                   color: "white",
                   fontSize: "large",
                   borderRadius: "0.3rem",
+                  cursor: "pointer",
                 }}
               >
                 Sign In
