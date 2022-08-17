@@ -65,6 +65,7 @@ const Navbar = () => {
             >
               <NavItem>About</NavItem>
             </Link>
+            <div style={{display: "flex", flexDirection: "column"}}>
             <Link
               to="/"
               style={{
@@ -85,11 +86,9 @@ const Navbar = () => {
               </NavItem>
             </Link>
             {isHover && (
-              <div>
                 <NavbarHover t1={"check"} />
-              </div>
             )}
-
+            </div>
             <Link
               to="/"
               style={{
