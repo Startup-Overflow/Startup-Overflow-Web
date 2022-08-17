@@ -52,12 +52,6 @@ const Navbar = () => {
           <Link to="/" style={{ textDecoration: "none", color: "#3e7ddb" , backgroundColor: "#f0f9ff", borderRadius: "5px", marginRight: "1rem"}}><NavItem>Events</NavItem></Link>
           <Link to="/" style={{ textDecoration: "none", color: "#3e7ddb" , backgroundColor: "#f0f9ff", borderRadius: "5px", marginRight: "1rem"}}><NavItem>Gallery</NavItem></Link>
           <Link to="/" style={{ textDecoration: "none", color: "#3e7ddb" , backgroundColor: "#f0f9ff", borderRadius: "5px", marginRight: "1rem"}}><NavItem>Q & A</NavItem></Link>
-            <NavItem>About</NavItem>
-            <NavItem>Resources</NavItem>
-            <NavItem>Scheme & Policies</NavItem>
-            <NavItem>Events</NavItem>
-            <NavItem>Gallery</NavItem>
-            <NavItem>Q & A</NavItem>
             <Link
               to="/register"
               style={{ textDecoration: "none", color: "black" }}
