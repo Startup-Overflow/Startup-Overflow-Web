@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Logo from "../imgs/logo.png";
+import NavbarHover from "./NavbarHover";
+import { useState } from "react";
 const Container = styled.div`
   height: 0px;
 `;
@@ -33,9 +35,15 @@ const NavItem = styled.div`
   cursor: pointer;
   margin-left: 15px;
   margin-right: 10px;
+
+  &:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
 `;
 
 const Navbar = () => {
+  const [isHover, setIsHover] = useState(false);
   return (
     <>
       <Container>
@@ -46,12 +54,89 @@ const Navbar = () => {
             </Link>
           </Left>
           <Right>
-          <Link to="/" style={{ textDecoration: "none", color: "#3e7ddb" , backgroundColor: "#f0f9ff", borderRadius: "5px", marginRight: "1rem"}}><NavItem>About</NavItem></Link>
-          <Link to="/" style={{ textDecoration: "none", color: "#3e7ddb" , backgroundColor: "#f0f9ff", borderRadius: "5px", marginRight: "1rem"}}><NavItem>Resources</NavItem></Link>
-          <Link to="/" style={{ textDecoration: "none", color: "#3e7ddb" , backgroundColor: "#f0f9ff", borderRadius: "5px", marginRight: "1rem"}}><NavItem>Schemes & Policies</NavItem></Link>
-          <Link to="/" style={{ textDecoration: "none", color: "#3e7ddb" , backgroundColor: "#f0f9ff", borderRadius: "5px", marginRight: "1rem"}}><NavItem>Events</NavItem></Link>
-          <Link to="/" style={{ textDecoration: "none", color: "#3e7ddb" , backgroundColor: "#f0f9ff", borderRadius: "5px", marginRight: "1rem"}}><NavItem>Gallery</NavItem></Link>
-          <Link to="/" style={{ textDecoration: "none", color: "#3e7ddb" , backgroundColor: "#f0f9ff", borderRadius: "5px", marginRight: "1rem"}}><NavItem>Q & A</NavItem></Link>
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+                color: "#3e7ddb",
+                backgroundColor: "#f0f9ff",
+                borderRadius: "5px",
+                marginRight: "1rem",
+              }}
+            >
+              <NavItem>About</NavItem>
+            </Link>
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+                color: "#3e7ddb",
+                backgroundColor: "#f0f9ff",
+                borderRadius: "5px",
+                marginRight: "1rem",
+              }}
+            >
+              <NavItem
+                onMouseOver={() => {
+                  setIsHover(true);
+                }}
+                onMouseOut={() => setIsHover(false)}
+              >
+                Resources
+              </NavItem>
+            </Link>
+            {isHover && (
+              <div>
+                <NavbarHover t1={"check"} />
+              </div>
+            )}
+
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+                color: "#3e7ddb",
+                backgroundColor: "#f0f9ff",
+                borderRadius: "5px",
+                marginRight: "1rem",
+              }}
+            ></Link>
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+                color: "#3e7ddb",
+                backgroundColor: "#f0f9ff",
+                borderRadius: "5px",
+                marginRight: "1rem",
+              }}
+            >
+              <NavItem>Events</NavItem>
+            </Link>
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+                color: "#3e7ddb",
+                backgroundColor: "#f0f9ff",
+                borderRadius: "5px",
+                marginRight: "1rem",
+              }}
+            >
+              <NavItem>Gallery</NavItem>
+            </Link>
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+                color: "#3e7ddb",
+                backgroundColor: "#f0f9ff",
+                borderRadius: "5px",
+                marginRight: "1rem",
+              }}
+            >
+              <NavItem>Q & A</NavItem>
+            </Link>
             <Link
               to="/register"
               style={{ textDecoration: "none", color: "black" }}
