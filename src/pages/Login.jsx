@@ -104,14 +104,14 @@ const Login = () => {
                 }}
                 style={{
                   padding: "0.8rem",
-                  marginBottom: "0.5rem",
+                  marginBottom: "0.8rem",
                   border: "none",
                   borderRadius: "0.3rem",
                   fontSize: "20px",
                 }}
               />
               {!redirect ? (
-                <p style={{ color: "red", fontSize: "small" }}>{msg}</p>
+                <p style={{ color: "red", fontSize: "large" }}>{msg}</p>
               ) : null}
               <input
                 value={password}
@@ -126,7 +126,7 @@ const Login = () => {
                   border: "none",
                   borderRadius: "0.3rem",
                   fontSize: "20px",
-                  marginBottom: "0.5rem"
+                  marginBottom: "0.8rem"
                 }}
               />
               <div style={{ marginBottom: "1rem" }}>
@@ -136,7 +136,7 @@ const Login = () => {
                 </label>
               </div>
               {redirect ? (
-                <p style={{ color: "green", fontSize: "small" }}>{msg}</p>
+                <p style={{ color: "#4ade80", fontSize: "large" }}>{msg}</p>
               ) : null}
               <button
                 type="submit"
