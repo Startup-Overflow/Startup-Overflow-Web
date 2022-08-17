@@ -37,12 +37,18 @@ const NavItem = styled.div`
   padding: 2px 4px;
   color: #3e7ddb;
   background-color: #f0f9ff;
+  font-weight: bold;
   border-radius: 5px;
   margin-right: 1.8rem;
+  transition: color 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+  &:hover {
+    box-shadow: inset 198px 0 0 0 #3e7ddb;
+    color: #f0f9ff;
+  }
 `;
 
 const Navbar = () => {
-  const [dropdown, showDropdown] = useState(false);
+  const [rDropdown, showRDropdown] = useState(false);
   return (
     <>
       <Container>
@@ -59,13 +65,13 @@ const Navbar = () => {
             <div style={{ display: "flex", flexDirection: "column" }}>
               <Link to="/" style={{ textDecoration: "none" }}>
                 <NavItem
-                  onMouseEnter={() => showDropdown(true)}
-                  onMouseLeave={() => showDropdown(false)}
+                  onMouseEnter={() => showRDropdown(true)}
+                  onMouseLeave={() => showRDropdown(false)}
                 >
                   Resources
+                  {rDropdown && <ResourcesDropdown />}
                 </NavItem>
               </Link>
-              {<ResourcesDropdown />}
             </div>
             <Link to="/" style={{}}></Link>
             <Link to="/" style={{ textDecoration: "none" }}>
