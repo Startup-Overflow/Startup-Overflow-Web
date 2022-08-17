@@ -46,12 +46,12 @@ const Navbar = () => {
             </Link>
           </Left>
           <Right>
-            <NavItem>ABOUT</NavItem>
-            <NavItem>RESOURCES</NavItem>
-            <NavItem>SCHEME & POLICIES</NavItem>
-            <NavItem>EVENTS</NavItem>
-            <NavItem>GALLERY</NavItem>
-            <NavItem>Q & A</NavItem>
+          <Link to="/" style={{ textDecoration: "none", color: "#3e7ddb" , backgroundColor: "#f0f9ff", borderRadius: "5px", marginRight: "1rem"}}><NavItem>About</NavItem></Link>
+          <Link to="/" style={{ textDecoration: "none", color: "#3e7ddb" , backgroundColor: "#f0f9ff", borderRadius: "5px", marginRight: "1rem"}}><NavItem>Resources</NavItem></Link>
+          <Link to="/" style={{ textDecoration: "none", color: "#3e7ddb" , backgroundColor: "#f0f9ff", borderRadius: "5px", marginRight: "1rem"}}><NavItem>Schemes & Policies</NavItem></Link>
+          <Link to="/" style={{ textDecoration: "none", color: "#3e7ddb" , backgroundColor: "#f0f9ff", borderRadius: "5px", marginRight: "1rem"}}><NavItem>Events</NavItem></Link>
+          <Link to="/" style={{ textDecoration: "none", color: "#3e7ddb" , backgroundColor: "#f0f9ff", borderRadius: "5px", marginRight: "1rem"}}><NavItem>Gallery</NavItem></Link>
+          <Link to="/" style={{ textDecoration: "none", color: "#3e7ddb" , backgroundColor: "#f0f9ff", borderRadius: "5px", marginRight: "1rem"}}><NavItem>Q & A</NavItem></Link>
             <Link
               to="/register"
               style={{ textDecoration: "none", color: "black" }}

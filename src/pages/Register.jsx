@@ -80,7 +80,7 @@ const Register = () => {
               style={{
                 display: "flex",
                 flexDirection: "column",
-                padding: "0rem 5rem",
+                padding: "0rem 8rem",
               }}
             >
               <div style={{ marginBottom: "0.8rem" }}>

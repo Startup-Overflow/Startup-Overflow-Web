@@ -79,7 +79,7 @@ const Login = () => {
               to="/register"
               style={{
                 textAlign: "right",
-                paddingRight: "5rem",
+                paddingRight: "8rem",
                 color: "blue",
               }}
             >
@@ -90,7 +90,7 @@ const Login = () => {
               style={{
                 display: "flex",
                 flexDirection: "column",
-                padding: "0rem 5rem",
+                padding: "0rem 8rem",
               }}
             >
               <input

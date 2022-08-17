@@ -1,20 +1,35 @@
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const NavTabs = styled.div`
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 5px;
+  margin-right: 2rem;
+`;
 
 const SubNav = () => {
   return (
     <>
-      <div style={{ display: "flex", flexDirection: "row" }}>
-        <Link to="/" style={{ textDecoration: "none" }}>
+      <Wrapper>
+        <NavTabs>
+        <Link to="/" style={{ textDecoration: "none",marginRight: "1rem", marginLeft: "1rem", color: "#3e7ddb", fontWeight: "bold"}}>
           Mentor
         </Link>
-        <Link to="/">Partners</Link>
-        <Link to="/">Investors</Link>
-        <Link to="/">Incubators</Link>
-        <Link to="/">Women Entrepreneurs</Link>
-        <div style={{ border: "1px solid black" }}>
+        <Link to="/" style={{ textDecoration: "none" ,marginRight: "1rem", color: "#3e7ddb", fontWeight: "bold"}}>Partners</Link>
+        <Link to="/" style={{ textDecoration: "none", marginRight: "1rem", color: "#3e7ddb", fontWeight: "bold"}}>Investors</Link>
+        <Link to="/" style={{ textDecoration: "none", marginRight: "1rem", color: "#3e7ddb", fontWeight: "bold"}}>Incubators</Link>
+        <Link to="/" style={{ textDecoration: "none",marginRight: "1rem", color: "#3e7ddb", fontWeight: "bold"}}>Women Entrepreneurs</Link>
+        </NavTabs>
+        <div style={{ border: "2px solid #3e7ddb", borderRadius: "1rem", padding: "5px"}}>
           <input
             type="text"
-            placeholder="search anything"
+            placeholder="ask anything..."
             style={{
               background: "transparent",
               border: "none",
@@ -23,10 +38,10 @@ const SubNav = () => {
           />
           <i
             class="fa-solid fa-magnifying-glass"
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", color: "#3e7ddb" }}
           ></i>
         </div>
-      </div>
+        </Wrapper>
     </>
   );
 };
