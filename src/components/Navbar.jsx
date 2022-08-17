@@ -37,7 +37,6 @@ const NavItem = styled.div`
   margin-right: 10px;
 
   &:hover {
-    text-decoration: underline;
     font-weight: bold;
   }
 `;
@@ -101,6 +100,18 @@ const Navbar = () => {
                 marginRight: "1rem",
               }}
             ></Link>
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+                color: "#3e7ddb",
+                backgroundColor: "#f0f9ff",
+                borderRadius: "5px",
+                marginRight: "1rem",
+              }}
+            >
+              <NavItem>Schemes & Policies</NavItem>
+            </Link>
             <Link
               to="/"
               style={{
