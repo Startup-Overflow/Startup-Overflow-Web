@@ -46,11 +46,11 @@ const Navbar = () => {
             </Link>
           </Left>
           <Right>
-            <NavItem>ABOUT</NavItem>
-            <NavItem>RESOURCES</NavItem>
-            <NavItem>SCHEME & POLICIES</NavItem>
-            <NavItem>EVENTS</NavItem>
-            <NavItem>GALLERY</NavItem>
+            <NavItem>About</NavItem>
+            <NavItem>Resources</NavItem>
+            <NavItem>Scheme & Policies</NavItem>
+            <NavItem>Events</NavItem>
+            <NavItem>Gallery</NavItem>
             <NavItem>Q & A</NavItem>
             <Link
               to="/register"
