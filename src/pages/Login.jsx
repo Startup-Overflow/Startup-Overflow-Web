@@ -81,6 +81,7 @@ const Login = () => {
                 textAlign: "right",
                 paddingRight: "8rem",
                 color: "blue",
+                marginBottom: "0.5rem"
               }}
             >
               Sign Up
@@ -103,11 +104,10 @@ const Login = () => {
                 }}
                 style={{
                   padding: "0.8rem",
-                  marginBottom: "1rem",
+                  marginBottom: "0.5rem",
                   border: "none",
                   borderRadius: "0.3rem",
                   fontSize: "20px",
-                  margin: "20px 0px",
                 }}
               />
               {!redirect ? (
@@ -126,7 +126,7 @@ const Login = () => {
                   border: "none",
                   borderRadius: "0.3rem",
                   fontSize: "20px",
-                  margin: "20px 0px",
+                  marginBottom: "0.5rem"
                 }}
               />
               <div style={{ marginBottom: "1rem" }}>

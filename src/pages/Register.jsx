@@ -83,7 +83,7 @@ const Register = () => {
                 padding: "0rem 8rem",
               }}
             >
-              <div style={{ marginBottom: "0.8rem" }}>
+              <div style={{ marginBottom: "0.5rem" }}>
                 <input
                   type="text"
                   placeholder="First Name"
