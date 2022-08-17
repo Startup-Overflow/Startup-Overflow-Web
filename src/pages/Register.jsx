@@ -196,7 +196,7 @@ const Register = () => {
                 Already have an Account
               </Link>
               {redirect ? (
-                <p style={{ color: "#4ade80", fontSize: "small" }}>
+                <p style={{ color: "#4ade80", fontSize: "small", margin: "0rem" }}>
                   Successfully Registered!!
                 </p>
               ) : null}
