@@ -2,10 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import Dropdown from "./Dropdown";
 import "./MenuItems.css";
 
-const MenuItems = ({ items, depthLevel }) => {
+const MenuItems = ({ items, depthLevel, path }) => {
   const [dropdown, setDropdown] = useState(false);
   let ref = useRef();
-
   useEffect(() => {
     const handler = (event) => {
       if (dropdown && ref.current && !ref.current.contains(event.target)) {
@@ -21,11 +20,11 @@ const MenuItems = ({ items, depthLevel }) => {
     };
   }, [dropdown]);
   const onMouseEnter = () => {
-    window.innerWidth > 960 && setDropdown(true);
+    window.innerWidth > 560 && setDropdown(true);
   };
 
   const onMouseLeave = () => {
-    window.innerWidth > 960 && setDropdown(false);
+    window.innerWidth > 560 && setDropdown(false);
   };
   return (
     <li
@@ -42,8 +41,7 @@ const MenuItems = ({ items, depthLevel }) => {
             aria-expanded={dropdown ? "true" : "false"}
             onClick={() => setDropdown((prev) => !prev)}
           >
-            {items.title}{" "}
-            {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
+            {items.title} {depthLevel > 0 ? "" : <span className="arrow" />}
           </button>
           <Dropdown
             depthLevel={depthLevel}

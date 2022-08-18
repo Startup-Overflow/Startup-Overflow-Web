@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Logo from "../imgs/logo.png";
-import { useState } from "react";
+
 import { NavItems } from "../pages/NavItems";
 import MenuItems from "./MenuItems";
 const Container = styled.div`
@@ -103,10 +103,15 @@ const Navbar = () => {
                 <i class="fa-solid fa-circle-user"></i>
               </NavItem>
             </Link> */}
-            {NavItems.map((nav, index) => {
+            {NavItems.map((nav, index, path) => {
               const depthLevel = 0;
               return (
-                <MenuItems items={nav} key={index} depthLevel={depthLevel} />
+                <MenuItems
+                  items={nav}
+                  key={index}
+                  depthLevel={depthLevel}
+                  path={path}
+                />
               );
             })}
             <Link

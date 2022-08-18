@@ -3,10 +3,10 @@ export const NavItems = [
     title: "About",
   },
   {
-    title: "Resources",
+    title: "Resources 🠫",
     submenu: [
       {
-        title: "Start a Business",
+        title: "Start Your Business 🠪",
         submenu: [
           {
             title: "How to Start a Business ?",
@@ -17,10 +17,28 @@ export const NavItems = [
           {
             title: "Startup Guidebook",
           },
+          {
+            title: "Get Recognised",
+          },
+          {
+            title: "Funding Guide",
+          },
+          {
+            title: "Startup Challenges",
+          },
+          {
+            title: "Market Reaearch Report",
+          },
+          {
+            title: "Patent Your Business Plan",
+          },
+          {
+            title: "Online Courses",
+          },
         ],
       },
       {
-        title: "Grow Your Business ?",
+        title: "Grow Your Business 🠪",
         submenu: [
           {
             title: "Advertisement",
@@ -45,4 +63,5 @@ export const NavItems = [
     title: "Q & A",
   },
 ];
+
 //console.log(NavItems[1].title);

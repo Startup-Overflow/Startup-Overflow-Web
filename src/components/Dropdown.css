@@ -5,15 +5,16 @@
   top: 40px;
   box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
     0 4px 6px -2px rgba(71, 63, 79, 0.16);
-  font-size: 0.875rem;
+  font-size: 0.7rem;
   z-index: 9999;
-  min-width: 10rem;
-  padding: 0.5rem 0.5rem;
+  min-width: 13rem;
+  /* padding: 0.5rem 0rem; */
   list-style: none;
   background-color: #fff;
   border-radius: 0.5rem;
   display: none;
   color: #3e7ddb;
+  padding: 10px 4px;
   /* font-weight: bold; */
 }
 
@@ -23,6 +24,8 @@
 
 .dropdown .dropdown-submenu {
   position: absolute;
-  left: 154px;
-  top: 15px;
+  left: 178px;
+  top: -15px;
+  padding: 10px 4px;
+  margin-left: 12px;
 }
