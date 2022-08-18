@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Logo from "../imgs/logo.png";
 import { useState } from "react";
-import ResourcesDropdown from "./ResourcesDropdown";
+import { NavItems } from "../pages/NavItems";
+import MenuItems from "./MenuItems";
 const Container = styled.div`
   height: 0px;
 `;
@@ -24,15 +25,23 @@ const Img = styled.img`
   width: 8vw;
 `;
 
-const Right = styled.div`
+const Right = styled.ul`
+  /* list-style: none;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-end; */
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 58px;
 `;
 
-const NavItem = styled.div`
+const NavItem = styled.li`
   font-size: 20px;
   cursor: pointer;
+  list-style: none;
   margin-left: 4px;
   padding: 2px 4px;
   color: #3e7ddb;
@@ -48,7 +57,6 @@ const NavItem = styled.div`
 `;
 
 const Navbar = () => {
-  const [rDropdown, showRDropdown] = useState(false);
   return (
     <>
       <Container>
@@ -59,33 +67,48 @@ const Navbar = () => {
             </Link>
           </Left>
           <Right>
-            <Link to="/" style={{ textDecoration: "none" }}>
-              <NavItem>About</NavItem>
+            {/* <Link to="/" style={{ textDecoration: "none" }}>
+              <NavItem>{NavItems[0].title}</NavItem>
             </Link>
             <div style={{ display: "flex", flexDirection: "column" }}>
               <Link to="/" style={{ textDecoration: "none" }}>
-                <NavItem
-                  onMouseEnter={() => showRDropdown(true)}
-                  onMouseLeave={() => showRDropdown(false)}
-                >
-                  Resources
-                  {rDropdown && <ResourcesDropdown />}
-                </NavItem>
+                <NavItem>{NavItems[1].title}</NavItem>
               </Link>
             </div>
             <Link to="/" style={{}}></Link>
             <Link to="/" style={{ textDecoration: "none" }}>
-              <NavItem>Schemes & Policies</NavItem>
+              <NavItem>{NavItems[2].title}</NavItem>
             </Link>
             <Link to="/" style={{ textDecoration: "none" }}>
-              <NavItem>Events</NavItem>
+              <NavItem>{NavItems[3].title}</NavItem>
             </Link>
             <Link to="/" style={{ textDecoration: "none" }}>
-              <NavItem>Gallery</NavItem>
+              <NavItem>{NavItems[4].title}</NavItem>
             </Link>
             <Link to="/" style={{ textDecoration: "none" }}>
-              <NavItem>Q & A</NavItem>
+              <NavItem>{NavItems[5].title}</NavItem>
             </Link>
+            <Link
+              to="/register"
+              style={{
+                textDecoration: "none",
+                color: "black",
+                height: "35px",
+                width: "35px",
+                borderRadius: "50%",
+                backgroundColor: "#f0f9ff",
+              }}
+            >
+              <NavItem>
+                <i class="fa-solid fa-circle-user"></i>
+              </NavItem>
+            </Link> */}
+            {NavItems.map((nav, index) => {
+              const depthLevel = 0;
+              return (
+                <MenuItems items={nav} key={index} depthLevel={depthLevel} />
+              );
+            })}
             <Link
               to="/register"
               style={{

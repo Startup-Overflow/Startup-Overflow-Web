@@ -18,15 +18,70 @@ const SubNav = () => {
     <>
       <Wrapper>
         <NavTabs>
-        <Link to="/" style={{ textDecoration: "none",marginRight: "1rem", marginLeft: "1rem", color: "#3e7ddb", fontWeight: "bold"}}>
-          Mentor
-        </Link>
-        <Link to="/" style={{ textDecoration: "none" ,marginRight: "1rem", color: "#3e7ddb", fontWeight: "bold"}}>Partners</Link>
-        <Link to="/" style={{ textDecoration: "none", marginRight: "1rem", color: "#3e7ddb", fontWeight: "bold"}}>Investors</Link>
-        <Link to="/" style={{ textDecoration: "none", marginRight: "1rem", color: "#3e7ddb", fontWeight: "bold"}}>Incubators</Link>
-        <Link to="/" style={{ textDecoration: "none",marginRight: "1rem", color: "#3e7ddb", fontWeight: "bold"}}>Women Entrepreneurs</Link>
+          <Link
+            to="/"
+            style={{
+              textDecoration: "none",
+              marginRight: "1rem",
+              marginLeft: "1rem",
+              color: "#3e7ddb",
+              fontWeight: "bold",
+            }}
+          >
+            Mentor
+          </Link>
+          <Link
+            to="/"
+            style={{
+              textDecoration: "none",
+              marginRight: "1rem",
+              color: "#3e7ddb",
+              fontWeight: "bold",
+            }}
+          >
+            Partners
+          </Link>
+          <Link
+            to="/"
+            style={{
+              textDecoration: "none",
+              marginRight: "1rem",
+              color: "#3e7ddb",
+              fontWeight: "bold",
+            }}
+          >
+            Investors
+          </Link>
+          <Link
+            to="/"
+            style={{
+              textDecoration: "none",
+              marginRight: "1rem",
+              color: "#3e7ddb",
+              fontWeight: "bold",
+            }}
+          >
+            Incubators
+          </Link>
+          <Link
+            to="/"
+            style={{
+              textDecoration: "none",
+              marginRight: "1rem",
+              color: "#3e7ddb",
+              fontWeight: "bold",
+            }}
+          >
+            Women Entrepreneurs
+          </Link>
         </NavTabs>
-        <div style={{ border: "2px solid #3e7ddb", borderRadius: "1rem", padding: "5px"}}>
+        <div
+          style={{
+            border: "2px solid #3e7ddb",
+            borderRadius: "1rem",
+            padding: "5px",
+          }}
+        >
           <input
             type="text"
             placeholder="ask anything..."
@@ -41,7 +96,7 @@ const SubNav = () => {
             style={{ cursor: "pointer", color: "#3e7ddb" }}
           ></i>
         </div>
-        </Wrapper>
+      </Wrapper>
     </>
   );
 };
