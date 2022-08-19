@@ -28,8 +28,8 @@ const StartupKit = () => {
     <div>
       {loading ? (
         <div>
-          <p>{kitContent.title}</p>
-          <div dangerouslySetInnerHTML={description()} />
+          <div style={{fontSize: "3.5rem", textAlign: "center", color: "#3e7ddb"}}>{kitContent.title}</div>
+          <div style={{margin: "30px"}} dangerouslySetInnerHTML={description()} />
         </div>
       ) : (
         <div style={{ margin: "auto", width: "100vw", height: "100vh" }}>
