@@ -21,10 +21,16 @@ const StartupKit = () => {
   useEffect(() => {
     startupKitHandler();
   }, [api]);
+  const description = () => {
+    return { __html: kitContent.desc };
+  };
   return (
     <div>
       {loading ? (
-        <div>{kitContent.title}</div>
+        <div>
+          <p>{kitContent.title}</p>
+          <div dangerouslySetInnerHTML={description()} />
+        </div>
       ) : (
         <div style={{ margin: "auto", width: "100vw", height: "100vh" }}>
           <Loader />

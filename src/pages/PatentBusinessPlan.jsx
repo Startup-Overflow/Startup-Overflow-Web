@@ -21,10 +21,16 @@ const PatentBusinessPlan = () => {
   useEffect(() => {
     patentHandler();
   }, [api]);
+  const description = () => {
+    return { __html: patentContent.desc };
+  };
   return (
     <div>
       {loading ? (
-        <div>{patentContent.title}</div>
+        <div>
+          <p>{patentContent.title}</p>
+          <div dangerouslySetInnerHTML={description()} />
+        </div>
       ) : (
         <div style={{ margin: "auto", width: "100vw", height: "100vh" }}>
           <Loader />

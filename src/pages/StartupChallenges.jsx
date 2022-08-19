@@ -21,10 +21,16 @@ const StartupChallenges = () => {
   useEffect(() => {
     startupChallengesHandler();
   }, [api]);
+  const description = () => {
+    return { __html: challengeContent.desc };
+  };
   return (
     <div>
       {loading ? (
-        <div>{challengeContent.title}</div>
+        <div>
+          <p>{challengeContent.title}</p>
+          <div dangerouslySetInnerHTML={description()} />
+        </div>
       ) : (
         <div style={{ margin: "auto", width: "100vw", height: "100vh" }}>
           <Loader />

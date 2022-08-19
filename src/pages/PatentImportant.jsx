@@ -21,10 +21,17 @@ const PatentImportant = () => {
   useEffect(() => {
     importantHandler();
   }, [api]);
+  console.log(importantContent);
+  const description = () => {
+    return { __html: importantContent.desc };
+  };
   return (
     <div>
       {loading ? (
-        <div class="content">{importantContent.title}</div>
+        <div>
+          <p>{importantContent.title}</p>
+          <div dangerouslySetInnerHTML={description()} />
+        </div>
       ) : (
         <div style={{ margin: "auto", width: "100vw", height: "100vh" }}>
           <Loader />
