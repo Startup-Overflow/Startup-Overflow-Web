@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import SubNav from "../components/SubNav";
 import "./Home.css";
+import Footer from "./Footer";
 
 const Container = styled.div`
   width: 100vw;
@@ -44,6 +45,7 @@ const Home = () => {
           </div>
         </Wrapper>
       </Container>
+      <Footer />
     </>
   );
 };
