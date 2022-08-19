@@ -24,18 +24,21 @@ const App = () => {
         <Route path="/Startup%20Kit" element={<StartupKit />} />
         <Route path="/Startup%20Challenges" element={<StartupChallenges />} />
         <Route
-          path="/patentyourbusinessplan"
+          path="/Patent%20Your%20Business%20Plan"
           element={<PatentYourBusinessPlan />}
         />
         <Route path="/patentimportant" element={<PatentImportant />} />
-        <Route path="/marketreport" element={<MarketReport />} />
-        <Route path="/startabusiness" element={<StartABusiness />} />
-        <Route path="/startupguide" element={<StartupGuide />} />
+        <Route path="/Market%20Reaearch%20Report" element={<MarketReport />} />
+        <Route
+          path="/How%20to%20Start%20a%20Business%20"
+          element={<StartABusiness />}
+        />
+        <Route path="/Startup%20Guidebook" element={<StartupGuide />} />
         <Route path="/womenbusiness" element={<WomenBusiness />} />
         <Route path="/narishakti" element={<NariShakti />} />
-        <Route path="/getpatent" element={<GetPatent />} />
-        <Route path="/fundingguide" element={<FundingGuide />} />
-        <Route path="/getrecognized" element={<GetRecognized />} />
+        <Route path="/Get%20Patent" element={<GetPatent />} />
+        <Route path="/Funding%20Guide" element={<FundingGuide />} />
+        <Route path="/Get%20Recognised" element={<GetRecognized />} />
       </Routes>
     </>
   );

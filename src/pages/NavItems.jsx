@@ -46,6 +46,12 @@ export const NavItems = [
           {
             title: "Branding & Marketing",
           },
+          {
+            title: "Get Patent",
+          },
+          {
+            title: "Importance of Patent",
+          },
         ],
       },
     ],
