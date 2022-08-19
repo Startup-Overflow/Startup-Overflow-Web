@@ -4,6 +4,7 @@ import Logo from "../imgs/logo.png";
 
 import { NavItems } from "../pages/NavItems";
 import MenuItems from "./MenuItems";
+import { NavLink } from "react-router-dom";
 const Container = styled.div`
   height: 0px;
 `;
@@ -105,6 +106,7 @@ const Navbar = () => {
             </Link> */}
             {NavItems.map((nav, index, path) => {
               const depthLevel = 0;
+              <NavLink to={`/${path}`}></NavLink>
               return (
                 <MenuItems
                   items={nav}

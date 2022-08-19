@@ -28,8 +28,8 @@ const StartupChallenges = () => {
     <div>
       {loading ? (
         <div>
-          <p>{challengeContent.title}</p>
-          <div dangerouslySetInnerHTML={description()} />
+          <div style={{fontSize: "3.5rem", textAlign: "center", color: "#3e7ddb"}}>{challengeContent.title}</div>
+          <div  style={{margin: "30px"}} dangerouslySetInnerHTML={description()} />
         </div>
       ) : (
         <div style={{ margin: "auto", width: "100vw", height: "100vh" }}>
