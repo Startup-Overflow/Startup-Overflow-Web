@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 import "./PostView.css";
 
 function Post(props) {
-  const PostEventhandler = (e) => {
-    e.preventDefault();
-  };
   return (
     <div className="post">
       <div className="wrapper">
