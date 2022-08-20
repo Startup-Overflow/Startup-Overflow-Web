@@ -18,8 +18,8 @@ const SubNav = () => {
     <>
       <Wrapper>
         <NavTabs>
-          <Link
-            to="/"
+          <a
+            href="https://startupoverflow.netlify.app/mentors"
             style={{
               textDecoration: "none",
               marginRight: "1rem",
@@ -29,7 +29,7 @@ const SubNav = () => {
             }}
           >
             Mentor
-          </Link>
+          </a>
           <Link
             to="/"
             style={{
