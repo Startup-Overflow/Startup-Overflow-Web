@@ -14,6 +14,7 @@ const GetRecognized = () => {
         .get(api)
         .then((response) => setRecognizedContent(response.data));
       setLoading(true);
+      console.log(data);
     } catch (error) {
       console.log(error);
     }

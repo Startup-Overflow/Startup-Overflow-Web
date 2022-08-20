@@ -14,6 +14,7 @@ const FundingGuide = () => {
         .get(api)
         .then((response) => setFundingContent(response.data));
       setLoading(true);
+      console.log(data);
     } catch (error) {
       console.log(error);
     }

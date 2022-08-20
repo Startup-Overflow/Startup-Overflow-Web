@@ -14,6 +14,7 @@ const StartupChallenges = () => {
         .get(api)
         .then((response) => setChallengeContent(response.data));
       setLoading(true);
+      console.log(data);
     } catch (error) {
       console.log(error);
     }
@@ -28,8 +29,19 @@ const StartupChallenges = () => {
     <div>
       {loading ? (
         <div>
-          <div style={{fontSize: "3.5rem", textAlign: "center", color: "#3e7ddb"}}>{challengeContent.title}</div>
-          <div  style={{margin: "30px"}} dangerouslySetInnerHTML={description()} />
+          <div
+            style={{
+              fontSize: "3.5rem",
+              textAlign: "center",
+              color: "#3e7ddb",
+            }}
+          >
+            {challengeContent.title}
+          </div>
+          <div
+            style={{ margin: "30px" }}
+            dangerouslySetInnerHTML={description()}
+          />
         </div>
       ) : (
         <div style={{ margin: "auto", width: "100vw", height: "100vh" }}>

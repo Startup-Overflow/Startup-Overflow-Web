@@ -14,6 +14,7 @@ const NariShakti = () => {
         .get(api)
         .then((response) => setShaktiContent(response.data));
       setLoading(true);
+      console.log(data);
     } catch (error) {
       console.log(error);
     }

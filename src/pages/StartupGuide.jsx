@@ -14,6 +14,7 @@ const StartupGuide = () => {
         .get(api)
         .then((response) => setGuideContent(response.data));
       setLoading(true);
+      console.log(data);
     } catch (error) {
       console.log(error);
     }

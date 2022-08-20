@@ -14,6 +14,7 @@ const MarketReport = () => {
         .get(api)
         .then((response) => setReportContent(response.data));
       setLoading(true);
+      console.log(data);
     } catch (error) {
       console.log(error);
     }

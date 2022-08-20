@@ -13,6 +13,7 @@ const WomenBusiness = () => {
         .get(api)
         .then((response) => setBusinessContent(response.data));
       setLoading(true);
+      console.log(data);
     } catch (error) {
       console.log(error);
     }

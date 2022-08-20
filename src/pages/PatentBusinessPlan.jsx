@@ -14,6 +14,7 @@ const PatentBusinessPlan = () => {
         .get(api)
         .then((response) => setPatentContent(response.data));
       setLoading(true);
+      console.log(data);
     } catch (error) {
       console.log(error);
     }

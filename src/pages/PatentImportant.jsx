@@ -14,6 +14,7 @@ const PatentImportant = () => {
         .get(api)
         .then((response) => setImportantContent(response.data));
       setLoading(true);
+      console.log(data);
     } catch (error) {
       console.log(error);
     }

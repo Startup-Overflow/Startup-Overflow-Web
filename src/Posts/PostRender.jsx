@@ -16,6 +16,7 @@ const PostRender = () => {
         .get(api)
         .then((response) => setAllpostContent(response.data));
       setLoading(true);
+      console.log(data);
     } catch (error) {
       console.log(error);
     }

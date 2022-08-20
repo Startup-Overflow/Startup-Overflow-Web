@@ -14,6 +14,7 @@ const GetPatent = () => {
         .get(api)
         .then((response) => setGetContent(response.data));
       setLoading(true);
+      console.log(data);
     } catch (error) {
       console.log(error);
     }
