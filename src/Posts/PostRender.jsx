@@ -31,7 +31,7 @@ const PostRender = () => {
   return (
     <div>
       {loading ? (
-        <div style={{ display: "flex", flexDirection: "column" }}>
+        <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
           {/* <p>{businessContent.title}</p>
           <div dangerouslySetInnerHTML={description()} /> */}
           {allpostContent.map((post) => {
