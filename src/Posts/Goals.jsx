@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Loader from "../components/Loader";
-const WomenBusiness = () => {
+import PostDisplay from "./PostDisplay";
+
+const Goals = () => {
   const [businessContent, setBusinessContent] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const api = "https://startupof.herokuapp.com/resources/9";
+  const api = "https://startupof.herokuapp.com/posts/views/36/";
+
   const startupKitHandler = async () => {
     try {
       const data = await axios
@@ -20,6 +23,7 @@ const WomenBusiness = () => {
   useEffect(() => {
     startupKitHandler();
   }, [api]);
+  // console.log(businessContent.desc);
   const description = () => {
     return { __html: businessContent.desc };
   };
@@ -27,8 +31,16 @@ const WomenBusiness = () => {
     <div>
       {loading ? (
         <div>
-          <p>{businessContent.title}</p>
-          <div dangerouslySetInnerHTML={description()} />
+          <PostDisplay
+            username={businessContent.username}
+            date={businessContent.post_date}
+            title={businessContent.title}
+            short_desc={businessContent.short_desc}
+          />
+          <div
+            style={{ margin: "10px" }}
+            dangerouslySetInnerHTML={description()}
+          />
         </div>
       ) : (
         <div style={{ margin: "auto", width: "100vw", height: "100vh" }}>
@@ -38,4 +50,5 @@ const WomenBusiness = () => {
     </div>
   );
 };
-export default WomenBusiness;
+
+export default Goals;

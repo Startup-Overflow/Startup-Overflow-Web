@@ -14,6 +14,9 @@ import NariShakti from "./pages/NariShakti.jsx";
 import GetPatent from "./pages/GetPatent.jsx";
 import FundingGuide from "./pages/FundingGuide.jsx";
 import GetRecognized from "./pages/GetRecognized.jsx";
+import How from "./Posts/How.jsx";
+import Goals from "./Posts/Goals.jsx";
+import Challenges from "./Posts/Challenges.jsx";
 const App = () => {
   return (
     <>
@@ -39,6 +42,9 @@ const App = () => {
         <Route path="/Get%20Patent" element={<GetPatent />} />
         <Route path="/Funding%20Guide" element={<FundingGuide />} />
         <Route path="/Get%20Recognised" element={<GetRecognized />} />
+        <Route path="/37" element={<How />} />
+        <Route path="/36" element={<Goals />} />
+        <Route path="/35" element={<Challenges />} />
       </Routes>
     </>
   );
