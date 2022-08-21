@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const WomenLanding = () => {
   const Button = styled.div`
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     text-align: center;
     padding: 6rem;
@@ -59,7 +59,7 @@ const WomenLanding = () => {
           style={{
             display: "flex",
             flexDirection: "row",
-            margin: "40px 30px",
+            margin: "60px 30px",
             alignItems: "center",
             justifyContent: "center",
           }}
