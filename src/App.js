@@ -23,6 +23,7 @@ import About from "./pages/About.jsx";
 import Mentors from "./pages/Mentors";
 import ViewProfile from "./pages/ViewProfile";
 import QuestionsRender from "./Q&A/QuestionsRender.jsx";
+import Events from "./Events/Events.jsx";
 
 const App = () => {
   return (
@@ -58,7 +59,11 @@ const App = () => {
         <Route path="/viewProfile" element={<ViewProfile />} />
         <Route path="/About" element={<About />} />
         <Route path="/Q%20&%20A" element={<QuestionsRender />} />
+<<<<<<< HEAD
         <Route path="/Gallery" element={<Gallery />} />
+=======
+        <Route path="/Events" element={<Events />} />
+>>>>>>> 870c439488babd71f02367b9776afab6923cfd7f
       </Routes>
     </>
   );
