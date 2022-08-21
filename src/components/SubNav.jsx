@@ -19,7 +19,7 @@ const SubNav = () => {
       <Wrapper>
         <NavTabs>
           <a
-            href="https://startupoverflow.netlify.app/mentors"
+            href="/"
             style={{
               textDecoration: "none",
               marginRight: "1rem",

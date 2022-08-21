@@ -30,7 +30,7 @@ const App = () => {
           path="/Patent%20Your%20Business%20Plan"
           element={<PatentYourBusinessPlan />}
         />
-        <Route path="/patentimportant" element={<PatentImportant />} />
+        <Route path="/Importance%20of%20Patent" element={<PatentImportant />} />
         <Route path="/Market%20Reaearch%20Report" element={<MarketReport />} />
         <Route
           path="/How%20to%20Start%20a%20Business%20"
