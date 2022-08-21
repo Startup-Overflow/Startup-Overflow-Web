@@ -16,8 +16,8 @@
 
 .pic {
     display: block;
-    height: 400px;
-    width: 500px;
+    height: 300px;
+    width: 350px;
     transition: transform 200ms ease-in;
     box-shadow: 0 2px 20px var(--light-grey);
     border: 4px solid var(--primary);
@@ -27,8 +27,8 @@
 .pic:hover {
     cursor: pointer;
     opacity: 0.8;
-    height: 420px;
-    width: 520px;
+    height: 320px;
+    width: 370px;
     transform : scale(1.02);
     box-shadow: 0 2px 20px var(--medium-grey);
 }
