@@ -32,7 +32,7 @@ const WomenLanding = () => {
     }
   `;
   return (
-    <>
+    <div style={{ margin: "20px" }}>
       <div>
         <div
           style={{
@@ -72,7 +72,7 @@ const WomenLanding = () => {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
