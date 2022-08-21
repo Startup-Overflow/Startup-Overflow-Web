@@ -17,6 +17,7 @@ import GetRecognized from "./pages/GetRecognized.jsx";
 import How from "./Posts/How.jsx";
 import Goals from "./Posts/Goals.jsx";
 import Challenges from "./Posts/Challenges.jsx";
+import WomenLanding from "./Women/WomenLanding.jsx";
 const App = () => {
   return (
     <>
@@ -45,6 +46,7 @@ const App = () => {
         <Route path="/37" element={<How />} />
         <Route path="/36" element={<Goals />} />
         <Route path="/35" element={<Challenges />} />
+        <Route path="/womenlanding" element={<WomenLanding />} />
       </Routes>
     </>
   );

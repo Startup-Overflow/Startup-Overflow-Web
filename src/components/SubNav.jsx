@@ -64,7 +64,7 @@ const SubNav = () => {
             Incubators
           </Link>
           <Link
-            to="/"
+            to="/womenlanding"
             style={{
               textDecoration: "none",
               marginRight: "1rem",
