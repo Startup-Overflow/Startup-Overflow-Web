@@ -75,7 +75,8 @@ const Home = () => {
       <div
         style={{
           margin: "20px 10px",
-          display: "flex",
+          display: "grid",
+          flexDirection:"row",
           justifyContent: "center",
           padding: "2rem 0rem",
         }}
