@@ -19,9 +19,10 @@ import Goals from "./Posts/Goals.jsx";
 import Challenges from "./Posts/Challenges.jsx";
 
 import WomenLanding from "./Women/WomenLanding.jsx";
-
+import About from "./pages/About.jsx";
 import Mentors from "./pages/Mentors";
 import ViewProfile from "./pages/ViewProfile";
+import QuestionsRender from "./Q&A/QuestionsRender.jsx";
 
 const App = () => {
   return (
@@ -55,6 +56,8 @@ const App = () => {
         <Route path="/womenlanding" element={<WomenLanding />} />
         <Route path="/mentors" element={<Mentors />} />
         <Route path="/viewProfile" element={<ViewProfile />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Q%20&%20A" element={<QuestionsRender />} />
       </Routes>
     </>
   );
