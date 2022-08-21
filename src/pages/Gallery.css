@@ -1,0 +1,40 @@
+:root {
+    --primary: #3e7ddb;
+    --secondary: #fff;
+    --dark-grey: #242424;
+    --light-grey: #9ca3af;
+    --medium-grey: #6b7280;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    margin: 2rem;
+    position: relative;
+}
+
+.pic {
+    display: block;
+    height: 400px;
+    width: 500px;
+    transition: transform 200ms ease-in;
+    box-shadow: 0 2px 20px var(--light-grey);
+    border: 4px solid var(--primary);
+    border-radius: 1rem;
+}
+
+.pic:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    height: 420px;
+    width: 520px;
+    transform : scale(1.02);
+    box-shadow: 0 2px 20px var(--medium-grey);
+}
+
+.text{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}

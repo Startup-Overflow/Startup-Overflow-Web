@@ -17,7 +17,7 @@ import GetRecognized from "./pages/GetRecognized.jsx";
 import How from "./Posts/How.jsx";
 import Goals from "./Posts/Goals.jsx";
 import Challenges from "./Posts/Challenges.jsx";
-
+import Gallery from "./pages/Gallery.js";
 import WomenLanding from "./Women/WomenLanding.jsx";
 import About from "./pages/About.jsx";
 import Mentors from "./pages/Mentors";
@@ -58,9 +58,9 @@ const App = () => {
         <Route path="/viewProfile" element={<ViewProfile />} />
         <Route path="/About" element={<About />} />
         <Route path="/Q%20&%20A" element={<QuestionsRender />} />
+        <Route path="/Gallery" element={<Gallery />} />
       </Routes>
     </>
   );
 };
-
 export default App;
