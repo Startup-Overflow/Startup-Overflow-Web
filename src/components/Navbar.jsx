@@ -27,10 +27,6 @@ const Img = styled.img`
 `;
 
 const Right = styled.ul`
-  /* list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; */
   display: flex;
   align-items: center;
   max-width: 100%;
@@ -106,7 +102,7 @@ const Navbar = () => {
             </Link> */}
             {NavItems.map((nav, index, path) => {
               const depthLevel = 0;
-              <NavLink to={`/${path}`}></NavLink>
+              <NavLink to={`/${path}`}></NavLink>;
               return (
                 <MenuItems
                   items={nav}
