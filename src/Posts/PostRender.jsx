@@ -31,7 +31,8 @@ const PostRender = () => {
   return (
     <div>
       {loading ? (
-        <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
+        <div style={{ display: "grid",
+        gridTemplateColumns: "auto auto auto"}}>
           {/* <p>{businessContent.title}</p>
           <div dangerouslySetInnerHTML={description()} /> */}
           {allpostContent.map((post) => {

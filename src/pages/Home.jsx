@@ -74,11 +74,10 @@ const Home = () => {
       </div>
       <div
         style={{
-          margin: "20px 10px",
           display: "grid",
-          flexDirection:"row",
-          justifyContent: "center",
-          padding: "2rem 0rem",
+          gridTemplateColumns: "auto auto auto",
+          gap: "1rem",
+          margin: "1rem"
         }}
       >
         <PostRender />
