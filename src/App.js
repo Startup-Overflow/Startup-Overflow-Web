@@ -28,6 +28,7 @@ import Events from "./Events/Events.jsx";
 import Entrepreneur from "./Posts/Entrepreneur.jsx";
 import Pitch from "./Posts/Pitch.jsx";
 import Tracking from "./Posts/Tracking.jsx";
+import CertificationAnswer from "./Q&A/CertificationAnswer.jsx";
 
 const App = () => {
   return (
@@ -70,6 +71,7 @@ const App = () => {
         <Route path="/33" element={<Pitch />} />
         <Route path="/32" element={<Pitch />} />
         <Route path="/31" element={<Tracking />} />
+        
         
       </Routes>
     </>

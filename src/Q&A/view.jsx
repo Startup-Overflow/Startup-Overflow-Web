@@ -11,9 +11,9 @@ const Span = styled.span`
 `;
 
 const View = (props) => {
-  function createMarkup() {
-    return { __html: props.desc };
-  }
+  // function createMarkup() {
+  //   return { __html: props.desc };
+  // }
   return (
     <div style={{ margin: "2rem 3rem" }}>
       <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>
@@ -32,8 +32,8 @@ const View = (props) => {
       <div style={{ backgroundColor: "#f0f9ff", width: "50vw" }}>
         <p
           style={{ padding: "20px", fontWeight: "bold", color: "#3e7ddb" }}
-          dangerouslySetInnerHTML={createMarkup()}
-        />
+          >check</p>
+      
       </div>
       <div>
         <span

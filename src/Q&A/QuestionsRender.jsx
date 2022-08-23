@@ -17,17 +17,20 @@ const P = styled.p`
 
 const QuestionsRender = () => {
   const [questionContent, setQuestionContent] = useState(null);
+  const[answers,setAnswers] = useState([{}]);
   const [loading, setLoading] = useState(false);
 
   const api = "https://startupof.herokuapp.com/questions/";
+  
 
   const startupKitHandler = async () => {
     try {
+      
       const data = await axios
         .get(api)
         .then((response) => setQuestionContent(response.data));
       setLoading(true);
-      console.log(data);
+      // console.log(data);
     } catch (error) {
       console.log(error);
     }
@@ -35,8 +38,28 @@ const QuestionsRender = () => {
   useEffect(() => {
     startupKitHandler();
   }, [api]);
+
+  // const value =  questionContent.map(async (question)=>{
+  //   return await (question.id)
+  // })
+  // console.log(value)
+
+  // useEffect(()=>{
+  //   fetch(`https://startupof.herokuapp.com/questions/answer/${value}`, {
+  //     method:"GET",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     }  
+  // })
+  // .then(resp => resp.json())
+  // .then(resp => setAnswers(resp))
+  // .catch(error => console.log(error))
+  // },[])
+
+  console.log(answers)
+
   // console.log(businessContent.desc);
-  console.log(questionContent);
+  // console.log(questionContent);
   return (
     <div>
       {loading ? (
@@ -56,8 +79,10 @@ const QuestionsRender = () => {
           </h1>
           <P>Ask a Question</P>
           {questionContent.map((question) => {
+          
             return (
               <View
+                key={question.id}
                 title={question.title}
                 hashtag={question.hashtag}
                 desc={question.desc}
