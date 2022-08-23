@@ -21,6 +21,7 @@ import Gallery from "./pages/Gallery.js";
 import WomenLanding from "./Women/WomenLanding.jsx";
 import About from "./pages/About.jsx";
 import Mentors from "./pages/Mentors";
+import Partners from "./pages/Partners.js";
 import ViewProfile from "./pages/ViewProfile";
 import QuestionsRender from "./Q&A/QuestionsRender.jsx";
 import Events from "./Events/Events.jsx";
@@ -56,6 +57,7 @@ const App = () => {
 
         <Route path="/womenlanding" element={<WomenLanding />} />
         <Route path="/mentors" element={<Mentors />} />
+        <Route path="/partners" element={<Partners />} />
         <Route path="/viewProfile" element={<ViewProfile />} />
         <Route path="/About" element={<About />} />
         <Route path="/Q%20&%20A" element={<QuestionsRender />} />

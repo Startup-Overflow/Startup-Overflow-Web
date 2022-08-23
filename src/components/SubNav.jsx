@@ -31,7 +31,7 @@ const SubNav = () => {
             Mentors
           </Link>
           <Link
-            to="/"
+            to="/partners"
             style={{
               textDecoration: "none",
               marginRight: "1rem",
