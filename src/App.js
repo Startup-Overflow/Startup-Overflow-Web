@@ -25,6 +25,9 @@ import Partners from "./pages/Partners.js";
 import ViewProfile from "./pages/ViewProfile";
 import QuestionsRender from "./Q&A/QuestionsRender.jsx";
 import Events from "./Events/Events.jsx";
+import Entrepreneur from "./Posts/Entrepreneur.jsx";
+import Pitch from "./Posts/Pitch.jsx";
+import Tracking from "./Posts/Tracking.jsx";
 
 const App = () => {
   return (
@@ -63,6 +66,11 @@ const App = () => {
         <Route path="/Q%20&%20A" element={<QuestionsRender />} />
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Events" element={<Events />} />
+        <Route path="/34" element={<Entrepreneur />} />
+        <Route path="/33" element={<Pitch />} />
+        <Route path="/32" element={<Pitch />} />
+        <Route path="/31" element={<Tracking />} />
+        
       </Routes>
     </>
   );

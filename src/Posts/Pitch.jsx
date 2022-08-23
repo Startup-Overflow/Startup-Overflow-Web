@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Loader from "../components/Loader";
 import PostDisplay from "./PostDisplay";
-const Entrepreneur = () => {
+const Pitch = () => {
   const [businessContent, setBusinessContent] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const api = "https://startupof.herokuapp.com/posts/views/37/";
+  const api = "https://startupof.herokuapp.com/posts/views/33/";
 
   const startupKitHandler = async () => {
     try {
@@ -49,4 +49,4 @@ const Entrepreneur = () => {
     </div>
   );
 };
-export default Entrepreneur;
+export default Pitch;
