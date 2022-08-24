@@ -3,7 +3,6 @@ import axios from "axios";
 import Loader from "../components/Loader";
 import View from "./view";
 import styled from "styled-components";
-import {Link} from 'react-router-dom'
 
 
 const P = styled.p`
@@ -19,7 +18,6 @@ const P = styled.p`
 
 const QuestionsRender = () => {
   const [questionContent, setQuestionContent] = useState({'title':'Please wait..', 'desc':'Page is loading...'});
-  const[answers,setAnswers] = useState([{}]);
   const [loading, setLoading] = useState(false);
 
   // const pullMe = () => {
@@ -84,19 +82,19 @@ const QuestionsRender = () => {
   // })
   // console.log(value)
 
-  useEffect(()=>{
-    fetch(`https://startupof.herokuapp.com/questions/answer/${value}`, {
-      method:"GET",
-      headers: {
-        "Content-Type": "application/json",
-      }  
-  })
-  .then(resp => resp.json())
-  .then(resp => setAnswers(resp))
-  .catch(error => console.log(error))
-  },[])
+  // useEffect(()=>{
+  //   fetch(`https://startupof.herokuapp.com/questions/answer/${value}`, {
+  //     method:"GET",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     }  
+  // })
+  // .then(resp => resp.json())
+  // .then(resp => setAnswers(resp))
+  // .catch(error => console.log(error))
+  // },[])
 
-  console.log(answers)
+  // console.log(answers)
 
   // console.log(businessContent.desc);
   // console.log(questionContent);
