@@ -22,14 +22,7 @@ const CertificationAnswer = () => {
   useEffect(() => {
     startupKitHandler();
   }, [api]);
-//   console.log(businessContent.map((ans)=>{
-//     return (
-//         console.log(ans.id)
-//     );
-//   }));
-//   const description = () => {
-//     return { __html: businessContent.desc };
-//   };
+
   return (
     <div>
       {loading ? (
@@ -39,10 +32,6 @@ const CertificationAnswer = () => {
             desc = {ans.desc}
             />
          })}
-          {/* <div
-            style={{ margin: "10px" }}
-            dangerouslySetInnerHTML={description()}
-          /> */}
         </div>
       ) : (
         <div style={{ margin: "auto", width: "100vw", height: "100vh" }}>
