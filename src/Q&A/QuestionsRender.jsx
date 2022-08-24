@@ -3,6 +3,8 @@ import axios from "axios";
 import Loader from "../components/Loader";
 import View from "./view";
 import styled from "styled-components";
+import {Link} from 'react-router-dom'
+
 
 const P = styled.p`
   text-align: right;
@@ -77,10 +79,10 @@ const QuestionsRender = () => {
     startupKitHandler();
   }, [api]);
 
-  const value =  questionContent.map(async (question)=>{
-    return await (question.id)
-  })
-  console.log(value)
+  // const value =  questionContent.map(async (question)=>{
+  //   return await (question.id)
+  // })
+  // console.log(value)
 
   useEffect(()=>{
     fetch(`https://startupof.herokuapp.com/questions/answer/${value}`, {
@@ -96,8 +98,8 @@ const QuestionsRender = () => {
 
   console.log(answers)
 
-  console.log(questionContent.desc);
-  console.log(questionContent);
+  // console.log(businessContent.desc);
+  // console.log(questionContent);
   return (
     <div>
       {loading ? (
@@ -116,7 +118,6 @@ const QuestionsRender = () => {
             Questions
           </h1>
           <P>Ask a Question</P>
-
           {questionContent.map((question) => {
           
             return (
