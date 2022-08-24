@@ -32,7 +32,7 @@ const View = (props) => {
       <div style={{ backgroundColor: "#f0f9ff", width: "50vw" }}>
         <p
           style={{ padding: "20px", fontWeight: "bold", color: "#3e7ddb" }}
-          >check</p>
+          ></p>
       
       </div>
       <div>
