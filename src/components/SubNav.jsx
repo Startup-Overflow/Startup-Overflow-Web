@@ -42,7 +42,7 @@ const SubNav = () => {
             Partners
           </Link>
           <Link
-            to="/"
+            to="/investors"
             style={{
               textDecoration: "none",
               marginRight: "1rem",
@@ -53,7 +53,7 @@ const SubNav = () => {
             Investors
           </Link>
           <Link
-            to="/"
+            to="/incubators"
             style={{
               textDecoration: "none",
               marginRight: "1rem",

@@ -16,12 +16,50 @@ const P = styled.p`
 `;
 
 const QuestionsRender = () => {
-  const [questionContent, setQuestionContent] = useState(null);
+  const [questionContent, setQuestionContent] = useState({'title':'Please wait..', 'desc':'Page is loading...'});
   const[answers,setAnswers] = useState([{}]);
   const [loading, setLoading] = useState(false);
 
+  // const pullMe = () => {
+  //   setLoading(true)
+
+  //   setTimeout(()=>{
+  //       setLoading(false)
+  //   }, 4000)
+// }
+
   const api = "https://startupof.herokuapp.com/questions/";
   
+  // console.log(api)
+  //   useEffect(() => {
+  //       fetch(`${api}`,{
+  //         method:"GET",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         }
+  //     })
+  //     .then(resp => resp.json())
+  //     .then(resp => setQuestionContent(resp))
+  //     .catch(error => console.log(error))
+  //     },[])
+
+  //     console.log(`https://startupof.herokuapp.com/questions/answer/${questionContent.id}/`)
+
+  //   useEffect(()=>{
+  //       fetch(`https://startupof.herokuapp.com/questions/answer/${questionContent.id}`, {
+  //           method:"GET",
+  //           headers: {
+  //             "Content-Type": "application/json",
+  //           }  
+  //       })
+  //       .then(resp => resp.json())
+  //       .then(resp => setAnswers(resp))
+  //       .catch(error => console.log(error))
+  //       },[])
+
+  //       console.log(answers);
+
+  //       const html = `${questionContent["desc"]}`
 
   const startupKitHandler = async () => {
     try {
@@ -39,27 +77,27 @@ const QuestionsRender = () => {
     startupKitHandler();
   }, [api]);
 
-  // const value =  questionContent.map(async (question)=>{
-  //   return await (question.id)
-  // })
-  // console.log(value)
+  const value =  questionContent.map(async (question)=>{
+    return await (question.id)
+  })
+  console.log(value)
 
-  // useEffect(()=>{
-  //   fetch(`https://startupof.herokuapp.com/questions/answer/${value}`, {
-  //     method:"GET",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     }  
-  // })
-  // .then(resp => resp.json())
-  // .then(resp => setAnswers(resp))
-  // .catch(error => console.log(error))
-  // },[])
+  useEffect(()=>{
+    fetch(`https://startupof.herokuapp.com/questions/answer/${value}`, {
+      method:"GET",
+      headers: {
+        "Content-Type": "application/json",
+      }  
+  })
+  .then(resp => resp.json())
+  .then(resp => setAnswers(resp))
+  .catch(error => console.log(error))
+  },[])
 
   console.log(answers)
 
-  // console.log(businessContent.desc);
-  // console.log(questionContent);
+  console.log(questionContent.desc);
+  console.log(questionContent);
   return (
     <div>
       {loading ? (
@@ -78,6 +116,7 @@ const QuestionsRender = () => {
             Questions
           </h1>
           <P>Ask a Question</P>
+
           {questionContent.map((question) => {
           
             return (

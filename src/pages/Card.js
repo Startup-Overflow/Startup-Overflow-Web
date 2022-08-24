@@ -21,11 +21,11 @@ function Card(props) {
           <i className="fa fa-star"></i>
         </div>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeX5tATWMJqas8msH2v9lZjf_yFgA0dxNtSlxfEPBsiV7zUxg/viewform">
-          <Button buttonStyle="btn--outline">Request Appointment</Button>
+          <Button buttonStyle="btn--outline">{props.btn1}</Button>
         </a>
         <Button buttonStyle="btn--outline" onClick={profileEventhandler}>
           <Link to="/viewProfile" className="button-link">
-            View Profile
+            {props.btn2}
           </Link>
         </Button>
       </div>

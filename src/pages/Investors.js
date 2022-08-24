@@ -9,53 +9,53 @@ import Chandan from "../imgs/Chandan_Aggarwal.jpg";
 import Durga from "../imgs/Dhana-Durga.jpeg";
 import Karan from "../imgs/Karan Shah.jpg";
 
-function Partners(props) {
+function Investors(props) {
   return (
     <div>
       <h1 className="card__heading">
-        Find Your <span style={{ color: "#3e7ddb" }}>Partners</span>
+        Find Your <span style={{ color: "#3e7ddb" }}>Investors</span>
       </h1>
       <div className="card-container">
         <Card
           img={Brajesh}
           title="Brajesh Maheshwari"
           desc="Co-Founder Director of Allen Career Institute"
-          btn1="Contact with Partners"
+          btn1="Connect with Investors"
           btn2="View Profile"
         />
         <Card
           img={Vinay}
           title="Vinay Kumar Reddy Nuvvuru"
           desc="Founder & Chairman of Indian Academy of Competitive Exams"
-          btn1="Contact with Partners"
+          btn1="Connect with Investors"
           btn2="View Profile"
         />
         <Card
           img={Prasant}
           title="Dr P Prasant"
           desc="Speaker, Educator and Administrator in teaching Cyber Security IT, Computer Applications, and Management Courses"
-          btn1="Contact with Partners"
+          btn1="Connect with Investors"
           btn2="View Profile"
         />
         <Card
           img={Chandan}
           title="Dr Chandan Agarwal"
           desc="Chairperson of G.D. Goenka School, Kanpur & Bareilly"
-          btn1="Contact with Partners"
+          btn1="Connect with Investors"
           btn2="View Profile"
         />
         <Card
           img={Durga}
           title="Dhana Durga"
           desc="Founder and Principal, Sree Vivekananda Educational Society"
-          btn1="Contact with Partners"
+          btn1="Connect with Investors"
           btn2="View Profile"
         />
         <Card
           img={Karan}
           title="Karan Shah"
           desc="Founder & CEO of IIDE of India's Leading Digital Marketing Edtech"
-          btn1="Contact with Partners"
+          btn1="Connect with Investors"
           btn2="View Profile"
         />
       </div>
@@ -63,4 +63,4 @@ function Partners(props) {
   );
 }
 
-export default Partners;
+export default Investors;
