@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Loader from "../components/Loader";
+import Navbar from "../components/Navbar";
 
 const StartABusiness = () => {
   const [businessContent, setBusinessContent] = useState(null);
@@ -28,9 +29,13 @@ const StartABusiness = () => {
   return (
     <div>
       {loading ? (
-        <div>
-          <p>{businessContent.title}</p>
-          <div dangerouslySetInnerHTML={description()} />
+        
+        <div >
+          <Navbar/>
+          <div style={{margin:"10px"}}><p style={{textAlign:"center", color:"#3e7ddb", marginTop:"6rem", fontSize:"4rem" , fontWeight:"bold"}}>Business</p>
+          {/* <p>{businessContent.title}</p> */}
+          <div dangerouslySetInnerHTML={description()} /></div>
+          
         </div>
       ) : (
         <div style={{ margin: "auto", width: "100vw", height: "100vh" }}>

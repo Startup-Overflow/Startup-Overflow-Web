@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="footer-container">
       <section className="footer-subscription">
-        <p className="footer-subscription-heading">
+        <p className="footer-subscription-heading" >
           Join the Event newsletter to receive news about our upcoming events or
           workshops
         </p>
@@ -88,6 +88,14 @@ function Footer() {
               aria-label="LinkedIn"
             >
               <i className="fab fa-linkedin" />
+            </Link>
+            <Link
+              className="social-icon-link facebook"
+              to="/"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fa-solid fa-envelope"/>
             </Link>
           </div>
         </div>

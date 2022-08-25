@@ -3,7 +3,7 @@ import Card from "../pages/Card";
 import "../pages/Card.css";
 import "./Mentors.css";
 import Kailash from "../imgs/kailash.jpg";
-import Anil from "../imgs/anil.jpg";
+import Anil from "../imgs/medical/anil.jpg";
 import Zar from "../imgs/zar.jpg";
 import TrueDigital from "../imgs/trueDigital.jpg";
 import Goldsachs from "../imgs/goldsachs.jpg";

@@ -12,7 +12,11 @@ function Card(props) {
       <div className="card__body">
         <img className="card__image" src={props.img} alt="" />
         <h2 className="card__title">{props.title}</h2>
+        <p style={{margin:"0px", color:"#3e7ddb", backgroundColor:"#f0f9ff"
+      ,borderRadius:"0.5rem", width:"9vw" , margin:"auto", padding:"0.5rem", border:"2px solid #3e7ddb"
+      }}>{props.dom}</p>
         <div className="card__description">{props.desc}</div>
+        
         <div className="mentors__rating">
           <i className="fa fa-star"></i>
           <i className="fa fa-star"></i>

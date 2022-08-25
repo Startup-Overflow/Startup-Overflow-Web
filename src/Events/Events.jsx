@@ -2,10 +2,15 @@ import SessionCard from "./SessionCard";
 import Session1 from "../imgs/session1.webp";
 import Session2 from "../imgs/session2.png";
 import Session3 from "../imgs/session3.webp";
+import Navbar from "../components/Navbar";
+import SubNav from "../components/SubNav";
+import Footer from "../pages/Footer";
 
 const Events = () => {
   return (
     <div>
+      <Navbar/>
+      <div style={{marginTop:"6rem", marginLeft:"2rem"}}><SubNav/></div>
       <h1
         style={{
           color: "#3e7ddb",
@@ -43,6 +48,7 @@ const Events = () => {
           time="08:00 am IST - 05:00 pm IST"
         />
       </div>
+      <Footer/>
     </div>
   );
 };
