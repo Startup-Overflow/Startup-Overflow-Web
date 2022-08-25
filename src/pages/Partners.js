@@ -2,12 +2,12 @@ import React from "react";
 import Card from "../pages/Card";
 import "../pages/Card.css";
 import "./Mentors.css";
-import Brajesh from "../imgs/Brajesh_Maheshwari.jpg";
-import Vinay from "../imgs/Vinay-kumar-reddy.jpg";
-import Prasant from "../imgs/Dr P Prasant.jpg";
-import Chandan from "../imgs/Chandan_Aggarwal.jpg";
-import Durga from "../imgs/Dhana-Durga.jpeg";
-import Karan from "../imgs/Karan Shah.jpg";
+// import Brajesh from "../imgs/market/Brajesh_Maheshwari.jpg";
+// import Vinay from "../imgs/Vinay-kumar-reddy.jpg";
+// import Prasant from "../imgs/Dr P Prasant.jpg";
+// import Chandan from "../imgs/Chandan_Aggarwal.jpg";
+// import Durga from "../imgs/Dhana-Durga.jpeg";
+// import Karan from "../imgs/market/Karan Shah.jpg";
 
 function Partners(props) {
   return (
@@ -16,7 +16,7 @@ function Partners(props) {
         Find Your <span style={{ color: "#3e7ddb" }}>Partners</span>
       </h1>
       <div className="card-container">
-        <Card
+        {/* <Card
           img={Brajesh}
           title="Brajesh Maheshwari"
           desc="Co-Founder Director of Allen Career Institute"
@@ -57,7 +57,7 @@ function Partners(props) {
           desc="Founder & CEO of IIDE of India's Leading Digital Marketing Edtech"
           btn1="Contact with Partners"
           btn2="View Profile"
-        />
+        /> */}
       </div>
     </div>
   );

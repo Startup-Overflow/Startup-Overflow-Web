@@ -1,5 +1,7 @@
 import {useState} from 'react'
-
+import Navbar from '../components/Navbar';
+import Footer from '../pages/Footer';
+import SubNav from '../components/SubNav';
 import {CKEditor} from "@ckeditor/ckeditor5-react";
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
@@ -24,7 +26,10 @@ const AddPost = () => {
         setHash('');
     }
 return  <div>
-<h2 style={{textAlign:"center"}}>Add Your <span style={{color:'#3e7ddb'}}>Post</span>  Here</h2>
+    <Navbar/>
+    <div style={{marginTop:"6rem", marginLeft:"2rem"}}><SubNav/></div>
+    
+<h2 style={{textAlign:"center", marginTop:"2rem"}}>Add Your <span style={{color:'#3e7ddb'}}>Post</span>  Here</h2>
 <input type="text" placeholder='enter your title here' value={title} className='post-title' 
 onChange={(e)=>{
 setTitle(e.target.value);
@@ -61,7 +66,8 @@ setTitle(e.target.value);
 <button onClick={addPostHandler} style={{color:"#3e7ddb", fontWeight:"bold", borderRadius:"0.5rem" 
 ,backgroundColor:"#f0f9ff" , border:"1px solid #3e7ddb" ,padding:"1.2rem", fontSize:"1.2rem"
 }}>Add Posts</button>
-</div>              
+</div> 
+<Footer/>             
 </div>
 }
 export default AddPost ;

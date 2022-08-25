@@ -74,7 +74,7 @@ const Home = () => {
         </p>
         
       </div>
-      <Link to='/addpost' style={{textDecoration:"none"}} className='home-addpost'><p style={{textAlign:"right", marginRight:"20px"}}>Add Post</p></Link>
+      <Link to='/addpost' style={{textDecoration:"none", letterSpacing:"2px"}} className='home-addpost'><p style={{textAlign:"right", marginRight:"20px"}}>Add Post</p></Link>
       
       <div
         style={{

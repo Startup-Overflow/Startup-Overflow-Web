@@ -1,14 +1,19 @@
 import "./About.css";
-import logo from "../imgs/logo.png";
+
+import Navbar from "../components/Navbar";
+import SubNav from "../components/SubNav";
+import Footer from "./Footer";
 
 function About() {
   return (
     <div>
+      <Navbar/>
+      <div style={{marginTop:"6rem", marginLeft:"2rem"}}><SubNav/></div>
       <div className="about-heading">
         About <span className="about-highlight">Startup Overflow</span>
       </div>
-      <img src={logo} alt="not found" className="about-pic" />
-      <p className="about-content">
+     
+      <p className="about-content" style={{marginBottom:"2rem"}}>
         A startup or start-up is a company or project undertaken by an
         entrepreneur to seek, develop, and validate a scalable business model.
         While entrepreneurship refers to all new businesses, including
@@ -23,6 +28,7 @@ function About() {
         the decision-making process. They help us decide quickly as possible
         under uncertainty but sometimes become erroneous and fallacious.
       </p>
+      <Footer/>
     </div>
   );
 }
