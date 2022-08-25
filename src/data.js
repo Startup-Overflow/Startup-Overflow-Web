@@ -1,7 +1,10 @@
 import S1 from "./imgs/slider1.webp";
 import S2 from "./imgs/slider2.png";
 import S3 from "./imgs/slider3.jpeg";
-
+import partner from "./imgs/partners.jpg";
+import investor from "./imgs/investor.jpg";
+import incubator from "./imgs/incubator.jpg";
+import womenEntrepreneur from "./imgs/women-entrepreneurs.png";
 export const sliderItems = [
     {
       id: 1,
@@ -9,7 +12,8 @@ export const sliderItems = [
       title: "How to Become an Entrepreneur",
       desc: "Get a step by step guide to start a business",
       bg: "f5fafd",
-      btn: "Read More"
+      btn: "Read More",
+      connect: "becomeentrepreneur"
     },
     {
       id: 2,
@@ -17,7 +21,8 @@ export const sliderItems = [
       title: "Get Effective Mentorship",
       desc: "Discuss your idea with experienced Mentors",
       bg: "fcf1ed",
-      btn: "Find Mentors"
+      btn: "Find Mentors",
+      connect: "mentors"
     },
     {
       id: 3,
@@ -25,30 +30,33 @@ export const sliderItems = [
       title: "Entrepreneurial Marketing Strategies",
       desc: "Reach your audience and convert your leads",
       bg: "fbf0f4",
-      btn: "Know More"
+      btn: "Know More",
+      connect: "mentors"
     },
   ];
 
-//   export const categories = [
-//     {
-//       id: 1,
-//       img: "https://images.pexels.com/photos/5885979/pexels-photo-5885979.jpeg",
-//       title: "SHIRT STYLE!",
-//       category: "woman"
-//     },
-//     {
-//       id: 2,
-//       img: "https://images.pexels.com/photos/6630811/pexels-photo-6630811.jpeg",
-//       title: "LOUNGEWEAR LOVE",
-//       category: "loungewear"
-//     },
-//     {
-//       id: 3,
-//       img: "https://images.pexels.com/photos/2068349/pexels-photo-2068349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-//       title: "JEANS FIT",
-//       category: "jeans"
-//     },
-//   ];
+  export const categories = [
+    {
+      id: 1,
+      img: womenEntrepreneur,
+      title: "women-entrepreneurs",
+    },
+    {
+      id: 2,
+      img: partner,
+      title: "partners",
+    },
+    {
+      id: 3,
+      img: investor,
+      title: "investors",
+    },
+    {
+      id: 4,
+      img: incubator,
+      title: "incubators",
+    },
+  ];
 
 //   export const popularProducts = [
 //     {

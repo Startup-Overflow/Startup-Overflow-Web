@@ -18,7 +18,7 @@ import How from "./Posts/How.jsx";
 import Goals from "./Posts/Goals.jsx";
 import Challenges from "./Posts/Challenges.jsx";
 import Gallery from "./pages/Gallery.js";
-import WomenLanding from "./Women/WomenLanding.jsx";
+import WomenEntrepreneur from "./Women/WomenEntrepreneur.jsx";
 import About from "./pages/About.jsx";
 import Mentors from "./pages/Mentors";
 import Partners from "./pages/Partners.js";
@@ -32,6 +32,7 @@ import Pitch from "./Posts/Pitch.jsx";
 import Tracking from "./Posts/Tracking.jsx";
 import AskQuestion from "./Q&A/AskQuestion.jsx";
 import AddPost from "./Posts/AddPost.jsx";
+import BecomeEntrepreneur from "./pages/BecomeEntrepreneur.js";
 const App = () => {
   return (
     <>
@@ -61,7 +62,7 @@ const App = () => {
         <Route path="/36" element={<Goals />} />
         <Route path="/35" element={<Challenges />} />
 
-        <Route path="/womenlanding" element={<WomenLanding />} />
+        <Route path="/women-entrepreneurs" element={<WomenEntrepreneur />} />
         <Route path="/mentors" element={<Mentors />} />
         <Route path="/partners" element={<Partners />} />
         <Route path="/investors" element={<Investors />} />
@@ -77,6 +78,7 @@ const App = () => {
         <Route path="/31" element={<Tracking />} />
         <Route path='/askquestion' element={<AskQuestion/>}/>
         <Route path='/addpost' element={<AddPost/>}/>
+        <Route path="/becomeentrepreneur" element={<BecomeEntrepreneur />} />
         
       </Routes>
     </>

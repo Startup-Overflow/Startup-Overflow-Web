@@ -2,7 +2,7 @@ import Women from "../imgs/women.jpg";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const WomenLanding = () => {
+const WomenEntrepreneur = () => {
   const Button = styled.div`
     width: 150px;
     height: 150px;
@@ -76,4 +76,4 @@ const WomenLanding = () => {
   );
 };
 
-export default WomenLanding;
+export default WomenEntrepreneur;

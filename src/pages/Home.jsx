@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom'
 import PostRender from "../Posts/PostRender";
 import Footer from "./Footer";
 import Slider from "../components/Slider";
+import Categories from "../components/Categories";
 
 const Container = styled.div`
   width: 100vw;
@@ -76,6 +77,7 @@ const Home = () => {
         
       </div>
       <Slider />
+      <Categories />
       <div
         style={{
           height: "60px",

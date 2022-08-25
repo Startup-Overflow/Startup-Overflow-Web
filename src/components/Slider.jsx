@@ -2,7 +2,9 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
 import React from 'react'
 import { useState } from 'react';
 import styled from 'styled-components'
-import {sliderItems} from '../data.js'
+import {sliderItems} from '../data.js';
+import {Link} from "react-router-dom";
+
 
 const Container =styled.div`
     width: 100%;
@@ -112,7 +114,9 @@ const Slider = () => {
                     <InfoContainer>
                         <Title>{item.title}</Title>
                         <Desc>{item.desc}</Desc>
-                        <Button>{item.btn}</Button>
+                        <Button>{item.btn}
+                        <Link to={`/${item.connect}`}></Link>
+                        </Button>
                     </InfoContainer>
                 </Slide>
             ))}
