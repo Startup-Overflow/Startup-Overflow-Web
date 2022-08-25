@@ -64,3 +64,49 @@ function Partners(props) {
 }
 
 export default Partners;
+
+// import React from "react";
+// import PartnersCard from "./PartnersCard";
+// import Corporates from "../imgs/Corporate.png";
+// import Government from "../imgs/government.png";
+// import Global from "../imgs/global.jpg";
+
+// const Partners = () => {
+//   return (
+//     <div>
+//       <h1
+//         style={{
+//           color: "#3e7ddb",
+//           textAlign: "center",
+//         }}
+//       >
+//         Connect with Partners
+//       </h1>
+//       <div
+//         style={{
+//           display: "grid",
+//           gridTemplateColumns: "repeat(auto-fit, minmax(15rem, 24rem))",
+//           gap: "2rem",
+//           justifyContent: "center",
+//           paddingTop: "2rem",
+//           paddingBottom: "2rem",
+//         }}
+//       >
+//         <PartnersCard
+//           img={Corporates}
+//           title="Corporates"
+//         />
+//         <PartnersCard
+//           img={Government}
+//           title="Government"
+//         />
+//         <PartnersCard
+//           img={Global}
+//           title="Global Bodies"
+//         />
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Partners;
