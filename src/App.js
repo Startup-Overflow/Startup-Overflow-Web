@@ -32,12 +32,9 @@ import Pitch from "./Posts/Pitch.jsx";
 import Tracking from "./Posts/Tracking.jsx";
 import AskQuestion from "./Q&A/AskQuestion.jsx";
 import AddPost from "./Posts/AddPost.jsx";
-<<<<<<< HEAD
 import BecomeEntrepreneur from "./pages/BecomeEntrepreneur.js";
-=======
 import PartnersView from "./pages/PartnersView.jsx";
 import MentorLanding from "./pages/MentorLanding.jsx";
->>>>>>> 6e39b664dff6d13ea9957b0dc267d314e4800c99
 const App = () => {
   return (
     <>
@@ -83,13 +80,9 @@ const App = () => {
         <Route path="/31" element={<Tracking />} />
         <Route path='/askquestion' element={<AskQuestion/>}/>
         <Route path='/addpost' element={<AddPost/>}/>
-<<<<<<< HEAD
         <Route path="/becomeentrepreneur" element={<BecomeEntrepreneur />} />
-=======
         <Route path='/mentorlanding' element={<MentorLanding/>}/>
-        <Route path='/partnersview' element={<PartnersView/>}/>
->>>>>>> 6e39b664dff6d13ea9957b0dc267d314e4800c99
-        
+        <Route path='/partnersview' element={<PartnersView/>}/> 
       </Routes>
     </>
   );
