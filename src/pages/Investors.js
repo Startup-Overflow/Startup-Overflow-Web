@@ -2,12 +2,13 @@ import React from "react";
 import Card from "../pages/Card";
 import "../pages/Card.css";
 import "./Mentors.css";
-import Brajesh from "../imgs/Brajesh_Maheshwari.jpg";
-import Vinay from "../imgs/Vinay-kumar-reddy.jpg";
-import Prasant from "../imgs/Dr P Prasant.jpg";
-import Chandan from "../imgs/Chandan_Aggarwal.jpg";
-import Durga from "../imgs/Dhana-Durga.jpeg";
-import Karan from "../imgs/Karan Shah.jpg";
+import Kailash from "../imgs/kailash.jpg";
+import Anil from "../imgs/anil.jpg";
+import Zar from "../imgs/zar.jpg";
+import TrueDigital from "../imgs/trueDigital.jpg";
+import Goldsachs from "../imgs/goldsachs.jpg";
+import Eques from "../imgs/eques.jpg";
+
 
 function Investors(props) {
   return (
@@ -17,44 +18,44 @@ function Investors(props) {
       </h1>
       <div className="card-container">
         <Card
-          img={Brajesh}
-          title="Brajesh Maheshwari"
-          desc="Co-Founder Director of Allen Career Institute"
+          img={Kailash}
+          title="Dr Kailash Pinjani"
+          desc="AI, Renewable Energy, Healthcare & Lifesciences, Nanotechnology, Sports"
           btn1="Connect with Investors"
           btn2="View Profile"
         />
         <Card
-          img={Vinay}
-          title="Vinay Kumar Reddy Nuvvuru"
-          desc="Founder & Chairman of Indian Academy of Competitive Exams"
+          img={Anil}
+          title="Anil Bhambhani"
+          desc="Finance Technology"
           btn1="Connect with Investors"
           btn2="View Profile"
         />
         <Card
-          img={Prasant}
-          title="Dr P Prasant"
-          desc="Speaker, Educator and Administrator in teaching Cyber Security IT, Computer Applications, and Management Courses"
+          img={Zar}
+          title="ZAR Partners"
+          desc="AI, Enterprise Software, Internet of Things, Transportation & Storage, Logistics"
           btn1="Connect with Investors"
           btn2="View Profile"
         />
         <Card
-          img={Chandan}
-          title="Dr Chandan Agarwal"
-          desc="Chairperson of G.D. Goenka School, Kanpur & Bareilly"
+          img={TrueDigital}
+          title="Truedigital Startup"
+          desc="Analytics, Agriculture, AI, Green Technology, Finance Technology, Education, Healthcare & Lifesciences, Internet of Things, Media & Entertainment, Retail, Real Estate, Biotechnology, Waste Management, Toys and Games"
           btn1="Connect with Investors"
           btn2="View Profile"
         />
         <Card
-          img={Durga}
-          title="Dhana Durga"
-          desc="Founder and Principal, Sree Vivekananda Educational Society"
+          img={Goldsachs}
+          title="GoldSachs Ventures"
+          desc="Analytics, Advertising, AR VR (Augmented + Virtual Reality), Automotive, Computer Vision, Telecommunication & Networking, Agriculture, AI, Finance Technology, Enterprise Software, Technology Hardware, Internet of Things, IT Services, Retail, Social Network, Logistics, Security Solutions"
           btn1="Connect with Investors"
           btn2="View Profile"
         />
         <Card
-          img={Karan}
-          title="Karan Shah"
-          desc="Founder & CEO of IIDE of India's Leading Digital Marketing Edtech"
+          img={Eques}
+          title="Eques Capital"
+          desc="AI, Green Technology, Finance Technology, Healthcare & Lifesciences, Pets & Animals, Logistics, Biotechnology, Waste Management"
           btn1="Connect with Investors"
           btn2="View Profile"
         />
