@@ -13,12 +13,12 @@ const AskQuestion = () => {
   const [hashtag,setHashtag] = useState('')
 
   const addQuestionHandler = () => {
-    const data = {};
-    data.question = question;
-    data.textarea = textarea;
-    data.description = text;
-    data.hashtag = hashtag;
-    console.log(data);
+    const qData = {};
+    qData.question = question;
+    qData.textarea = textarea;
+    qData.description = text;
+    qData.hashtag = hashtag;
+    console.log(qData);
     setText('')
     setQuestion('')
     setTextarea('')

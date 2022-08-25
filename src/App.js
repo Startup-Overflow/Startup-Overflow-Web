@@ -29,6 +29,7 @@ import Entrepreneur from "./Posts/Entrepreneur.jsx";
 import Pitch from "./Posts/Pitch.jsx";
 import Tracking from "./Posts/Tracking.jsx";
 import AskQuestion from "./Q&A/AskQuestion.jsx";
+import AddPost from "./Posts/AddPost.jsx";
 const App = () => {
   return (
     <>
@@ -71,7 +72,7 @@ const App = () => {
         <Route path="/32" element={<Pitch />} />
         <Route path="/31" element={<Tracking />} />
         <Route path='/askquestion' element={<AskQuestion/>}/>
-        
+        <Route path='/addpost' element={<AddPost/>}/>
         
       </Routes>
     </>

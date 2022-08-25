@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import SubNav from "../components/SubNav";
 import "./Home.css";
+import {Link} from 'react-router-dom'
 import PostRender from "../Posts/PostRender";
 import Footer from "./Footer";
 
@@ -71,7 +72,10 @@ const Home = () => {
         >
           Recent Posts
         </p>
+        
       </div>
+      <Link to='/addpost' style={{textDecoration:"none"}} className='home-addpost'><p style={{textAlign:"right", marginRight:"20px"}}>Add Post</p></Link>
+      
       <div
         style={{
           display: "grid",

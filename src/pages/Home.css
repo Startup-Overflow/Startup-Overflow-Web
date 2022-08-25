@@ -9,6 +9,15 @@
   align-items: center;
 }
 
+.home-addpost{
+  font-weight: bold;
+}
+.home-addpost:hover{
+  font-style: italic;
+  text-decoration: underline;
+  color:#3e7ddb;
+}
+
 .p1 {
   font-size: 5rem;
   font-weight: bolder;
