@@ -1,0 +1,27 @@
+:root {
+    --primary: #3e7ddb;
+    --secondary: #fff;
+    --dark-grey: #242424;
+    --light-grey: #9ca3af;
+    --medium-grey: #6b7280;
+  }
+
+.partners_card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 2px 20px var(--light-grey);
+    border-radius: 5px;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+.partners_card__body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  background: rgb(57,128,233);
+background: linear-gradient(90deg, rgba(57,128,233,1) 0%, rgba(118,168,242,1) 35%, rgba(155,186,232,1) 100%);
+}

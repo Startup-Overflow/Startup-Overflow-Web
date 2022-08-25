@@ -6,6 +6,7 @@ import "./Home.css";
 import {Link} from 'react-router-dom'
 import PostRender from "../Posts/PostRender";
 import Footer from "./Footer";
+import Slider from "../components/Slider";
 
 const Container = styled.div`
   width: 100vw;
@@ -47,6 +48,34 @@ const Home = () => {
           </div>
         </Wrapper>
       </Container>
+      <div
+        style={{
+          height: "80px",
+          width: "30rem",
+          backgroundColor: "#f0f9ff",
+          display: "flex",
+          margin: "auto",
+          marginTop: "20px",
+          marginBottom: "20px",
+          alignItems: "center",
+          justifyContent: "center",
+          border: "1px solid #3b82f6",
+          borderRadius: "0.5rem",
+        }}
+      >
+        <p
+          style={{
+            textAlign: "center",
+            color: "#3b82f6",
+            fontWeight: "bold",
+            fontSize: "2rem",
+          }}
+        >
+          What are you looking for?
+        </p>
+        
+      </div>
+      <Slider />
       <div
         style={{
           height: "60px",
