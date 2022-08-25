@@ -13,7 +13,7 @@ function Investors(props) {
   return (
     <div>
       <h1 className="card__heading">
-        Find Your <span style={{ color: "#3e7ddb" }}>Investors</span>
+        Find Your <span style={{ color: "#3e7ddb" }}>Incubators</span>
       </h1>
       <div className="card-container">
         <Card
