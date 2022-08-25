@@ -29,19 +29,169 @@ setFilter(e.target.value)
 <option value="" selected > Sort Types</option>
 <option value="corporate" >Corporte</option>
 <option value="government">Government</option>
-<option value="global">Market Strategy</option>
+<option value="global">Global Body</option>
 </select></div>
 <div className="card-container">
 
 {filter === '' && 
 <Card
-        dom='Market Strategy'
+        dom='Corporate'
         img={krishna}
           title="Vinay Kumar Reddy Nuvvuru"
           desc="Founder & Chairman of Indian Academy of Competitive Exams"
           btn1="Request Appointment"
           btn2="View Profile"/>
       }
+            {filter === '' && 
+        <Card
+        dom='Corporate'
+        img={che}
+          title="Vinay Kumar Reddy Nuvvuru"
+          desc="Founder & Chairman of Indian Academy of Competitive Exams"
+          btn1="Request Appointment"
+          btn2="View Profile"/>
+      }
+      {filter === '' && 
+        <Card
+        dom='Corporate'
+        img={b}
+          title="Vinay Kumar Reddy Nuvvuru"
+          desc="Founder & Chairman of Indian Academy of Competitive Exams"
+          btn1="Request Appointment"
+          btn2="View Profile"/>
+      }
+      {filter === '' && 
+        <Card
+        dom='Government'
+        img={pra}
+          title="Vinay Kumar Reddy Nuvvuru"
+          desc="Founder & Chairman of Indian Academy of Competitive Exams"
+          btn1="Request Appointment"
+          btn2="View Profile"/>
+      }
+      {filter === '' && 
+        <Card
+        img={nadig}
+        dom='Government'
+          title="Vinay Kumar Reddy Nuvvuru"
+          desc="Founder & Chairman of Indian Academy of Competitive Exams"
+          btn1="Request Appointment"
+          btn2="View Profile"/>
+      }
+      {filter === '' && 
+        <Card
+        img={lalit}
+        dom='Government'
+          title="Vinay Kumar Reddy Nuvvuru"
+          desc="Founder & Chairman of Indian Academy of Competitive Exams"
+          btn1="Request Appointment"
+          btn2="View Profile"/>
+      }
+      {filter === '' && 
+        <Card
+        img={gayatri}
+        dom='Global Body'
+          title="Vinay Kumar Reddy Nuvvuru"
+          desc="Founder & Chairman of Indian Academy of Competitive Exams"
+          btn1="Request Appointment"
+          btn2="View Profile"/>
+      }{filter === '' && 
+      <Card
+      img={anil}dom='Global Body'
+        title="Vinay Kumar Reddy Nuvvuru"
+        desc="Founder & Chairman of Indian Academy of Competitive Exams"
+        btn1="Request Appointment"
+        btn2="View Profile"/>
+    }
+          {filter === '' && 
+        <Card
+        dom='Global Body'
+        img={a}
+          title="Vinay Kumar Reddy Nuvvuru"
+          desc="Founder & Chairman of Indian Academy of Competitive Exams"
+          btn1="Request Appointment"
+          btn2="View Profile"/>
+      }
+            {filter === 'global' && 
+        <Card
+        img={gayatri}
+        dom='Global Body'
+          title="Vinay Kumar Reddy Nuvvuru"
+          desc="Founder & Chairman of Indian Academy of Competitive Exams"
+          btn1="Request Appointment"
+          btn2="View Profile"/>
+      }{filter === 'global' && 
+      <Card
+      img={anil}dom='Global Body'
+        title="Vinay Kumar Reddy Nuvvuru"
+        desc="Founder & Chairman of Indian Academy of Competitive Exams"
+        btn1="Request Appointment"
+        btn2="View Profile"/>
+    }
+          {filter === 'global' && 
+        <Card
+        dom='Global Body'
+        img={a}
+          title="Vinay Kumar Reddy Nuvvuru"
+          desc="Founder & Chairman of Indian Academy of Competitive Exams"
+          btn1="Request Appointment"
+          btn2="View Profile"/>
+      }
+            {filter === 'government' && 
+        <Card
+        dom='Government'
+        img={pra}
+          title="Vinay Kumar Reddy Nuvvuru"
+          desc="Founder & Chairman of Indian Academy of Competitive Exams"
+          btn1="Request Appointment"
+          btn2="View Profile"/>
+      }
+      {filter === 'government' && 
+        <Card
+        img={nadig}
+        dom='Government'
+          title="Vinay Kumar Reddy Nuvvuru"
+          desc="Founder & Chairman of Indian Academy of Competitive Exams"
+          btn1="Request Appointment"
+          btn2="View Profile"/>
+      }
+      {filter === 'government' && 
+        <Card
+        img={lalit}
+        dom='Government'
+          title="Vinay Kumar Reddy Nuvvuru"
+          desc="Founder & Chairman of Indian Academy of Competitive Exams"
+          btn1="Request Appointment"
+          btn2="View Profile"/>
+      }
+      {filter === 'corporate' && 
+<Card
+        dom='Corporate'
+        img={krishna}
+          title="Vinay Kumar Reddy Nuvvuru"
+          desc="Founder & Chairman of Indian Academy of Competitive Exams"
+          btn1="Request Appointment"
+          btn2="View Profile"/>
+      }
+            {filter === 'corporate' && 
+        <Card
+        dom='Corporate'
+        img={che}
+          title="Vinay Kumar Reddy Nuvvuru"
+          desc="Founder & Chairman of Indian Academy of Competitive Exams"
+          btn1="Request Appointment"
+          btn2="View Profile"/>
+      }
+      {filter === 'corporate' && 
+        <Card
+        dom='Corporate'
+        img={b}
+          title="Vinay Kumar Reddy Nuvvuru"
+          desc="Founder & Chairman of Indian Academy of Competitive Exams"
+          btn1="Request Appointment"
+          btn2="View Profile"/>
+      }
+
 </div>
 </div>
 }

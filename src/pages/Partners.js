@@ -4,6 +4,7 @@ import Corporates from "../imgs/Corporate.png";
 import Government from "../imgs/government.png";
 import Global from "../imgs/global.png";
 import gif from "../imgs/partnergif.gif";
+import {Link} from 'react-router-dom'
 
 const Partners = () => {
   return (
@@ -31,19 +32,22 @@ Partner with us and tap into our network to accelerate innovation.</p>
           paddingBottom: "2rem",
         }}
       >
+        <Link to='/partnersview' style={{textDecoration:"none"}}>
         <PartnersCard
           img={Corporates}
           title="Corporates"
 
         />
-        <PartnersCard
+        </Link>
+        <Link to='/partnersview' style={{textDecoration:"none"}}><PartnersCard
           img={Government}
           title="Government"
-        />
-        <PartnersCard
+        /></Link>
+        <Link to='/partnersview' style={{textDecoration:"none"}}><PartnersCard
           img={Global}
           title="Global Bodies"
-        />
+        /></Link>
+        
       </div>
     </div>
   );
