@@ -32,6 +32,8 @@ import Pitch from "./Posts/Pitch.jsx";
 import Tracking from "./Posts/Tracking.jsx";
 import AskQuestion from "./Q&A/AskQuestion.jsx";
 import AddPost from "./Posts/AddPost.jsx";
+import PartnersView from "./pages/PartnersView.jsx";
+import MentorLanding from "./pages/MentorLanding.jsx";
 const App = () => {
   return (
     <>
@@ -77,6 +79,8 @@ const App = () => {
         <Route path="/31" element={<Tracking />} />
         <Route path='/askquestion' element={<AskQuestion/>}/>
         <Route path='/addpost' element={<AddPost/>}/>
+        <Route path='/mentorlanding' element={<MentorLanding/>}/>
+        <Route path='/partnersview' element={<PartnersView/>}/>
         
       </Routes>
     </>

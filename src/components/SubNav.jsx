@@ -19,7 +19,7 @@ const SubNav = () => {
       <Wrapper>
         <NavTabs>
           <Link
-            to="/mentors"
+            to="/mentorlanding"
             style={{
               textDecoration: "none",
               marginRight: "1rem",
