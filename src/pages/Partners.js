@@ -20,31 +20,43 @@ function Partners(props) {
           img={Brajesh}
           title="Brajesh Maheshwari"
           desc="Co-Founder Director of Allen Career Institute"
+          btn1="Contact with Partners"
+          btn2="View Profile"
         />
         <Card
           img={Vinay}
           title="Vinay Kumar Reddy Nuvvuru"
           desc="Founder & Chairman of Indian Academy of Competitive Exams"
+          btn1="Contact with Partners"
+          btn2="View Profile"
         />
         <Card
           img={Prasant}
           title="Dr P Prasant"
           desc="Speaker, Educator and Administrator in teaching Cyber Security IT, Computer Applications, and Management Courses"
+          btn1="Contact with Partners"
+          btn2="View Profile"
         />
         <Card
           img={Chandan}
           title="Dr Chandan Agarwal"
           desc="Chairperson of G.D. Goenka School, Kanpur & Bareilly"
+          btn1="Contact with Partners"
+          btn2="View Profile"
         />
         <Card
           img={Durga}
           title="Dhana Durga"
           desc="Founder and Principal, Sree Vivekananda Educational Society"
+          btn1="Contact with Partners"
+          btn2="View Profile"
         />
         <Card
           img={Karan}
           title="Karan Shah"
           desc="Founder & CEO of IIDE of India's Leading Digital Marketing Edtech"
+          btn1="Contact with Partners"
+          btn2="View Profile"
         />
       </div>
     </div>

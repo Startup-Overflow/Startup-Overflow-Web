@@ -3,8 +3,7 @@ import axios from "axios";
 import Loader from "../components/Loader";
 import View from "./view";
 import styled from "styled-components";
-import {Link} from 'react-router-dom'
-
+import {Link} from 'react-router-dom';
 
 const P = styled.p`
   text-align: right;
@@ -18,7 +17,7 @@ const P = styled.p`
 `;
 
 const QuestionsRender = () => {
-  const [questionContent, setQuestionContent] = useState(null);
+  const [questionContent, setQuestionContent] = useState({'title':'Please wait..', 'desc':'Page is loading...'});
   const[answers,setAnswers] = useState([{}]);
   const [loading, setLoading] = useState(false);
 
@@ -41,9 +40,8 @@ const QuestionsRender = () => {
     startupKitHandler();
   }, [api]);
 
-
-
   console.log(answers)
+
   return (
     <div>
       {loading ? (
@@ -62,7 +60,7 @@ const QuestionsRender = () => {
             Questions
           </h1>
           <Link to='/askquestion' style={{textDecoration:'none'}}><P>Ask a Question</P></Link>
-          
+
           {questionContent.map((question) => {
           
             return (
@@ -77,7 +75,7 @@ const QuestionsRender = () => {
           })}
         </div>
       ) : (
-        <div style={{ margin: "auto", width: "100vw", height: "100vh" }}>
+        <div style={{ margin: "auto", width: "import {Link} from 'react-router-dom'100vw", height: "100vh" }}>
           <Loader />
         </div>
       )}

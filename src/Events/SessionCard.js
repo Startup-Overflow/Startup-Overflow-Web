@@ -1,6 +1,5 @@
 import "./SessionCard.css";
 import { Button } from "../components/Button.jsx";
-import { Link } from "react-router-dom";
 
 function SessionCard(props) {
   return (
@@ -18,9 +17,9 @@ function SessionCard(props) {
           <i className="fa fa-clock"></i>
           <span className="time">{props.time}</span>
         </div>
-        <Link to="/login">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfN2awa_iIraN0Utc5W4smciqE1ok9r5W2SM2dxqq4ThQZjFg/viewform">
           <Button buttonStyle="btn--outline">Attend</Button>
-        </Link>
+        </a>
       </div>
     </div>
   );

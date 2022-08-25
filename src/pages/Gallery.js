@@ -3,7 +3,6 @@ import g2 from "../imgs/g2.jpg";
 import g3 from "../imgs/g3.jpg";
 import g4 from "../imgs/g4.jpg";
 import "./Gallery.css";
-import Navbar from "../components/Navbar";
 
 function Gallery(){
     return(

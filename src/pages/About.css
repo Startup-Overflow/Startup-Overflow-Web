@@ -15,6 +15,16 @@
   color: var(--primary-color);
 }
 
+.about-pic{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
 .about-content {
   font-size: larger;
   padding-left: 4rem;

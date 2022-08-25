@@ -1,10 +1,13 @@
 import "./About.css";
+import logo from "../imgs/logo.png";
+
 function About() {
   return (
     <div>
       <div className="about-heading">
         About <span className="about-highlight">Startup Overflow</span>
       </div>
+      <img src={logo} alt="not found" className="about-pic" />
       <p className="about-content">
         A startup or start-up is a company or project undertaken by an
         entrepreneur to seek, develop, and validate a scalable business model.
