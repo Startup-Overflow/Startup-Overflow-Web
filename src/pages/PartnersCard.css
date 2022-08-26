@@ -23,5 +23,10 @@
   align-items: center;
   text-align: center;
   background: rgb(57,128,233);
+  text-decoration: none;
 background: linear-gradient(90deg, rgba(57,128,233,1) 0%, rgba(118,168,242,1) 35%, rgba(155,186,232,1) 100%);
+}
+
+.partners_card__title {
+  text-decoration: none;
 }

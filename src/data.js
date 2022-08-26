@@ -31,7 +31,7 @@ export const sliderItems = [
       desc: "Reach your audience and convert your leads",
       bg: "fbf0f4",
       btn: "Know More",
-      connect: "/mentors"
+      connect: "/Get%20Patent"
     },
   ];
 
