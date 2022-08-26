@@ -1,8 +1,14 @@
 import "./MentorProfile.css";
+import {useState} from 'react';
 import { Button } from "../components/Button";
 import location from '../imgs/location.png'
+import { DateTimePickerComponent } from '@syncfusion/ej2-react-calendars';
+
 
 function MentorProfile(props) {
+  const [time,setTime] = useState('24/08/2022, 14:30:20');
+  console.log(time);
+  const minDate = new Date();
   const elements = props.specialization;
   const items = [];
   for (const [index, value] of elements.entries()) {
@@ -22,8 +28,23 @@ function MentorProfile(props) {
           <h5>{props.desc}</h5>
           <h5><img src={location} alt='not found'style={{height:"20px", width:"20px"}}/>{props.location}</h5>
         </div>
-
-        <div className="availability">Availability: {props.availability}</div>
+        <div style={{display:"flex", flexDirection:"row"}}>
+        <div className="availability">Availability: {time.toLocaleString(('en-GB'))}</div>
+        <div style={{marginLeft:"2rem"}}>
+      <DateTimePickerComponent placeholder="Choose a date and time"
+      value={time}
+      min={minDate}
+      onChange={(e)=>setTime(e.target.value)}
+      format="dd-MMM-yy HH:mm"
+      step={60}></DateTimePickerComponent>
+    </div>
+        </div>
+        
+        
+        
+        
+        
+        
         <div className="experience">Experience:{props.experience}</div>
         <hr />
         <div className="specialization" style={{fontWeight:"bold"}}>Mentor Specialization:</div>
