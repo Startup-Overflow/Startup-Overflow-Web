@@ -22,7 +22,7 @@ export const sliderItems = [
       desc: "Discuss your idea with experienced Mentors",
       bg: "fcf1ed",
       btn: "Find Mentors",
-      connect: "mentors"
+      connect: "/mentors"
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ export const sliderItems = [
       desc: "Reach your audience and convert your leads",
       bg: "fbf0f4",
       btn: "Know More",
-      connect: "mentors"
+      connect: "/mentors"
     },
   ];
 
