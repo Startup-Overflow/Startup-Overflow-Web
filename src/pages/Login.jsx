@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import SubNav from "../components/SubNav";
 import Host from "../Host";
 import { Navigate } from "react-router-dom";
+import { useSpeechSynthesis } from 'react-speech-kit';
+
 
 
 const Container = styled.div`
@@ -30,6 +32,8 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [redirect, setRedirect] = useState(false);
   const [msg, setMsg] = useState("");
+  const { speak } = useSpeechSynthesis()
+  const text = 'To login first add your username and then your password and click on the sign in button'
 
   const loginSubmitHandler = async (e) => {
     e.preventDefault();
@@ -157,6 +161,7 @@ const Login = () => {
               >
                 Sign In
               </button>
+              <button onClick={() => speak({ text: text })}>.</button>
             </form>
           </LoginWrapper>
         </Wrapper>

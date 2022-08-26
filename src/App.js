@@ -87,7 +87,11 @@ const App = () => {
         <Route path='/mentorlanding' element={<MentorLanding/>}/>
         <Route path='/partnersview' element={<PartnersView/>}/> 
         <Route path='/investorslanding' element={<InvestorsLanding/>}/>
+
+        
+
         <Route path="/mentorFeedback" element={<MentorFeedback/>} />
+
       </Routes>
     </>
   );
