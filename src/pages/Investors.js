@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../pages/Card";
 import "../pages/Card.css";
 import "./Mentors.css";
+import { useState } from "react";
 import Kailash from "../imgs/kailash.jpg";
 import Anil from "../imgs/medical/anil.jpg";
 import Zar from "../imgs/zar.jpg";
@@ -11,47 +12,80 @@ import Eques from "../imgs/eques.jpg";
 
 
 function Investors(props) {
+  const [filter,setFilter] = useState('')
   return (
     <div>
       <h1 className="card__heading">
-        Find Your <span style={{ color: "#3e7ddb" }}>Investors</span>
+        Connect with <span style={{ color: "#3e7ddb" }}>Investors</span>
       </h1>
+      <div style={{display:"flex",alignItems:"right", justifyContent:"right" , marginRight:"40px"}}>
+      <select
+      style={{height:"2rem", width:"10vw", color:"#3e7ddb", outline:"none", backgroundColor:"#f0f9ff",
+    borderRadius:"0.5rem", fontWeight:"bold", border:"2px solid #3e7ddb", cursor:"pointer"
+    }}
+      onChange = {(e)=>{
+        setFilter(e.target.value)
+      }}
+      ><option value="" selected >All Investors</option>
+        
+        <option value="angel">Angel</option>
+        <option value="accelerators">Accelerators</option>
+        <option value="venture">Venture Capital Firms</option>
+      </select>
+      </div>
       <div className="card-container">
-        <Card
+        {filter === '' && <Card
           img={Kailash}
+          dom="angel"
           title="Dr Kailash Pinjani"
           desc="AI, Renewable Energy, Healthcare & Lifesciences, Nanotechnology, Sports"
           btn1="Connect with Investors"
           btn2="View Profile"
-        />
-        <Card
+        />}
+        {filter === '' && <Card
           img={Anil}
-          title="Anil Bhambhani"
-          desc="Finance Technology"
+          dom="angel"
+          title="Dr Kailash Pinjani"
+          desc="AI, Renewable Energy, Healthcare & Lifesciences, Nanotechnology, Sports"
           btn1="Connect with Investors"
           btn2="View Profile"
-        />
-        <Card
+        />}
+        {filter === '' && <Card
           img={Zar}
-          title="ZAR Partners"
-          desc="AI, Enterprise Software, Internet of Things, Transportation & Storage, Logistics"
+          dom="angel"
+          title="Dr Kailash Pinjani"
+          desc="AI, Renewable Energy, Healthcare & Lifesciences, Nanotechnology, Sports"
           btn1="Connect with Investors"
           btn2="View Profile"
-        />
-        <Card
+        />}
+        {filter === '' && <Card
           img={TrueDigital}
-          title="Truedigital Startup"
-          desc="Analytics, Agriculture, AI, Green Technology, Finance Technology, Education, Healthcare & Lifesciences, Internet of Things, Media & Entertainment, Retail, Real Estate, Biotechnology, Waste Management, Toys and Games"
+          dom="corporate"
+          title="Dr Kailash Pinjani"
+          desc="AI, Renewable Energy, Healthcare & Lifesciences, Nanotechnology, Sports"
           btn1="Connect with Investors"
           btn2="View Profile"
-        />
-        <Card
+        />}
+        {filter === '' && <Card
           img={Goldsachs}
-          title="GoldSachs Ventures"
-          desc="Analytics, Advertising, AR VR (Augmented + Virtual Reality), Automotive, Computer Vision, Telecommunication & Networking, Agriculture, AI, Finance Technology, Enterprise Software, Technology Hardware, Internet of Things, IT Services, Retail, Social Network, Logistics, Security Solutions"
+          dom="corporate"
+          title="Dr Kailash Pinjani"
+          desc="AI, Renewable Energy, Healthcare & Lifesciences, Nanotechnology, Sports"
           btn1="Connect with Investors"
           btn2="View Profile"
-        />
+        />}
+        {filter === '' && <Card
+          img={Goldsachs}
+          dom="corporate"
+          title="Dr Kailash Pinjani"
+          desc="AI, Renewable Energy, Healthcare & Lifesciences, Nanotechnology, Sports"
+          btn1="Connect with Investors"
+          btn2="View Profile"
+        />}
+
+        
+        
+        
         <Card
           img={Eques}
           title="Eques Capital"

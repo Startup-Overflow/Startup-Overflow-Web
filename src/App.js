@@ -35,6 +35,7 @@ import AddPost from "./Posts/AddPost.jsx";
 import BecomeEntrepreneur from "./pages/BecomeEntrepreneur.js";
 import PartnersView from "./pages/PartnersView.jsx";
 import MentorLanding from "./pages/MentorLanding.jsx";
+import InvestorsLanding from "./pages/InvestorsLanding.jsx";
 const App = () => {
   return (
     <>
@@ -83,6 +84,7 @@ const App = () => {
         <Route path="/becomeentrepreneur" element={<BecomeEntrepreneur />} />
         <Route path='/mentorlanding' element={<MentorLanding/>}/>
         <Route path='/partnersview' element={<PartnersView/>}/> 
+        <Route path='/investorslanding' element={<InvestorsLanding/>}/>
       </Routes>
     </>
   );
