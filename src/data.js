@@ -13,7 +13,7 @@ export const sliderItems = [
       desc: "Get a step by step guide to start a business",
       bg: "f5fafd",
       btn: "Read More",
-      connect: "becomeentrepreneur"
+      connect: "/How%20to%20Start%20a%20Business%20"
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ export const sliderItems = [
       desc: "Discuss your idea with experienced Mentors",
       bg: "fcf1ed",
       btn: "Find Mentors",
-      connect: "mentors"
+      connect: "/mentors"
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ export const sliderItems = [
       desc: "Reach your audience and convert your leads",
       bg: "fbf0f4",
       btn: "Know More",
-      connect: "mentors"
+      connect: "/mentors"
     },
   ];
 
