@@ -42,7 +42,23 @@ function Investors(props) {
           btn1="Connect with Investors"
           btn2="View Profile"
         />}
+        {filter === 'angel' && <Card
+          img={Kailash}
+          dom="angel"
+          title="Dr Kailash Pinjani"
+          desc="AI, Renewable Energy, Healthcare & Lifesciences, Nanotechnology, Sports"
+          btn1="Connect with Investors"
+          btn2="View Profile"
+        />}
         {filter === '' && <Card
+          img={Anil}
+          dom="angel"
+          title="Dr Kailash Pinjani"
+          desc="AI, Renewable Energy, Healthcare & Lifesciences, Nanotechnology, Sports"
+          btn1="Connect with Investors"
+          btn2="View Profile"
+        />}
+        {filter === 'angel' && <Card
           img={Anil}
           dom="angel"
           title="Dr Kailash Pinjani"
@@ -58,7 +74,23 @@ function Investors(props) {
           btn1="Connect with Investors"
           btn2="View Profile"
         />}
+        {filter === 'angel' && <Card
+          img={Zar}
+          dom="angel"
+          title="Dr Kailash Pinjani"
+          desc="AI, Renewable Energy, Healthcare & Lifesciences, Nanotechnology, Sports"
+          btn1="Connect with Investors"
+          btn2="View Profile"
+        />}
         {filter === '' && <Card
+          img={TrueDigital}
+          dom="corporate"
+          title="Dr Kailash Pinjani"
+          desc="AI, Renewable Energy, Healthcare & Lifesciences, Nanotechnology, Sports"
+          btn1="Connect with Investors"
+          btn2="View Profile"
+        />}
+        {filter === 'corporate' && <Card
           img={TrueDigital}
           dom="corporate"
           title="Dr Kailash Pinjani"
@@ -74,6 +106,14 @@ function Investors(props) {
           btn1="Connect with Investors"
           btn2="View Profile"
         />}
+        {filter === 'corporate' && <Card
+          img={Goldsachs}
+          dom="corporate"
+          title="Dr Kailash Pinjani"
+          desc="AI, Renewable Energy, Healthcare & Lifesciences, Nanotechnology, Sports"
+          btn1="Connect with Investors"
+          btn2="View Profile"
+        />}
         {filter === '' && <Card
           img={Goldsachs}
           dom="corporate"
@@ -82,17 +122,28 @@ function Investors(props) {
           btn1="Connect with Investors"
           btn2="View Profile"
         />}
+        {filter === '' && <Card
+          img={Eques}
+          dom="Venture Capital Firms"
+          title="Dr Kailash Pinjani"
+          desc="AI, Renewable Energy, Healthcare & Lifesciences, Nanotechnology, Sports"
+          btn1="Connect with Investors"
+          btn2="View Profile"
+        />}
+        {filter === 'venture' && <Card
+          img={Eques}
+          dom="Venture Capital Firms"
+          title="Dr Kailash Pinjani"
+          desc="AI, Renewable Energy, Healthcare & Lifesciences, Nanotechnology, Sports"
+          btn1="Connect with Investors"
+          btn2="View Profile"
+        />}
+
 
         
         
         
-        <Card
-          img={Eques}
-          title="Eques Capital"
-          desc="AI, Green Technology, Finance Technology, Healthcare & Lifesciences, Pets & Animals, Logistics, Biotechnology, Waste Management"
-          btn1="Connect with Investors"
-          btn2="View Profile"
-        />
+        
       </div>
     </div>
   );
