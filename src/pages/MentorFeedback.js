@@ -1,26 +1,55 @@
 import {useState} from "react";
+import { Link, Navigate } from "react-router-dom";
 
 function MentorFeedback(){
-    const [username, setUsername] = useState("");
+  const user_id=1;
+    const [redirect, setRedirect] = useState(false);
+    const [msg, setMsg] = useState("");
+    const [name, setName] = useState("");
     const [email, setEmail] = useState("");
-    const [ans_1, setAns_1] = useState("");
-    const [ans_2, setAns_2] = useState("");
-    const [ans_3, setAns_3] = useState("");
-    const [ans_4, setAns_4] = useState("");
-    const [ans_5, setAns_5] = useState("");
+    const [que_1, setQue_1] = useState("");
+    const [que_2, setQue_2] = useState("");
+    const [que_3, setQue_3] = useState("");
+    const [que_4, setQue_4] = useState("");
+    const [que_5, setQue_5] = useState("");
 
     const SubmitHandler = async (e)=>{
         e.preventDefault();
         const data={};
-        data.username=username;
+        data.name=name;
         data.email=email;
-        data.ans_1=ans_1;
-        data.ans_2=ans_2;
-        data.ans_3=ans_3;
-        data.ans_4=ans_4;
-        data.ans_5=ans_5;
+        data.user_id=user_id;
+        data.que_1=que_1;
+        data.que_2=que_2;
+        data.que_3=que_3;
+        data.que_4=que_4;
+        data.que_5=que_5;
+        const url = "https://sofrec.herokuapp.com/";
+        // const url = "http://192.168.43.166:8000"
 
         console.log(data);
+        const response = await fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            user_id,
+            que_1,
+            que_2,
+            que_3,
+            que_4,
+            que_5,
+          }),
+        });
+        const content = await response.json();
+        if (typeof content.token !== "undefined") {
+          localStorage.setItem("token", content.token);
+          console.log("token type", content.token);
+          setRedirect(true);
+          setMsg("Feedback send!");
+        } else {
+          setRedirect(false);
+          setMsg("Can't process to send feedback!");
+        }
     }
 
     return(
@@ -29,7 +58,7 @@ function MentorFeedback(){
                 <label style={{margin: "2rem"}}>
                     Name: 
                     <input type="text" name="name" onChange={(e) => {
-                  setUsername(e.target.value);
+                  setName(e.target.value);
                 }}/>
                 </label>
                 <label style={{margin: "2rem"}}>
@@ -41,34 +70,42 @@ function MentorFeedback(){
                 <label style={{margin: "2rem"}}>
                     How was your experience in three sessions? 
                     <input type="text" name="name" onChange={(e) => {
-                  setAns_1(e.target.value);
+                  setQue_1(e.target.value);
                 }}/>
                 </label>
                 <label style={{margin: "2rem"}}>
                     How cooperative the mentor was?
                     <input type="text" name="name" onChange={(e) => {
-                  setAns_2(e.target.value);
+                  setQue_2(e.target.value);
                 }}/>
                 </label>
                 <label style={{margin: "2rem"}}>
                     What did you learn at the end of the sessions?
                     <input type="text" name="name" onChange={(e) => {
-                  setAns_3(e.target.value);
+                  setQue_3(e.target.value);
                 }}/>
                 </label>
                 <label style={{margin: "2rem"}}>
                     How responsive he/she was?
                     <input type="text" name="name" onChange={(e) => {
-                  setAns_4(e.target.value);
+                  setQue_4(e.target.value);
                 }}/>
                 </label>
                 <label style={{margin: "2rem"}}>
                     Suggessions given by mentor are worked or not?
                     <input type="text" name="name" onChange={(e) => {
-                  setAns_5(e.target.value);
+                  setQue_5(e.target.value);
                 }}/>
                 </label>
+                <Link to="/mentors">
                 <button type="submit">Give Feedback</button>
+                </Link>
+                {redirect ? (
+                <div><p style={{ color: "red", fontSize: "large" }}>{msg}</p>
+                <Navigate to="/mentors"/>
+                </div>
+                
+              ) : null}
             </form>
         </div>
     )
