@@ -161,7 +161,7 @@ const Login = () => {
               >
                 Sign In
               </button>
-              <button onClick={() => speak({ text: text })}>Speak</button>
+              <button onClick={() => speak({ text: text })}>.</button>
             </form>
           </LoginWrapper>
         </Wrapper>
