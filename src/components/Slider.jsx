@@ -114,8 +114,8 @@ const Slider = () => {
                     <InfoContainer>
                         <Title>{item.title}</Title>
                         <Desc>{item.desc}</Desc>
-                        <Button>{item.btn}
-                        <Link to={`${item.connect}`}></Link>
+                        <Button>
+                        <Link to={`${item.connect}`} style={{textDecoration: "none", color: "white"}}>{item.btn}</Link>
                         </Button>
                     </InfoContainer>
                 </Slide>

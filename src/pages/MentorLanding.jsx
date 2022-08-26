@@ -8,11 +8,12 @@ import {Link} from 'react-router-dom'
 
 const MentorLanding = () => {
     return <div>
-        <div style={{ }}><img src={mentorlogo} alt="found" style={{height:"20%"}}/>
+        <div style={{ }}><img src={mentorlogo} alt="found" style={{height:"500px", width: "600px", display: "flex", margin: "auto"}}/>
         </div>
       
     <h1 style={{
         textAlign: "center",
+        textDecoration: "none"
       }}
     >
       Connect with <span style={{
@@ -36,10 +37,13 @@ const MentorLanding = () => {
           
         />
         </Link>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSct1dfKiLN61Py2z0Ucs9Q24Frpskntq4f6ltlihyAr8re9Mg/viewform" style={{textDecoration: "none"}}>
         <PartnersCard
           img={Government}
           title="Be a Mentor"
-        /></div>
+        />
+        </a>
+        </div>
    
     </div>
 }
