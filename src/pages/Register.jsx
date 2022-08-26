@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import registerBg from "../imgs/registerBg.png";
 import SubNav from "../components/SubNav";
 import Host from "../Host";
+import { Navigate } from "react-router-dom";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -31,6 +32,7 @@ const Register = () => {
   const [password, setpassword] = useState("");
   const [confirm_password, setconfirm_password] = useState("");
   const [redirect, setRedirect] = useState(false);
+  const [status, setStatus] = useState('entrepreneur');
   const registerSubmitHandler = async (e) => {
     e.preventDefault();
     const registerData = {};
@@ -40,6 +42,7 @@ const Register = () => {
     registerData.email = email;
     registerData.password = password;
     registerData.confirm_password = confirm_password;
+    registerData.status = status;
     console.log(registerData);
     setfirst_name("");
     setlast_name("");
@@ -185,6 +188,15 @@ const Register = () => {
                   }}
                 />
               </div>
+              <select 
+              style={{padding:"10px"}}
+              onChange={(e)=>{setStatus(e.target.value)}}
+              >
+                <option value="mentor">Mentor</option>
+                <option value="investor">Investor</option>
+                <option value="partner">Partner</option>
+                <option value="entrepreneur">Entrepreneur</option>
+              </select>
               <Link
                 to="/login"
                 style={{
@@ -196,10 +208,14 @@ const Register = () => {
                 Already have an Account
               </Link>
               {redirect ? (
-                <p style={{ color: "#4ade80", fontSize: "small", margin: "0rem" }}>
-                  Successfully Registered!!
-                </p>
+                <div><p style={{ color: "#4ade80", fontSize: "small", margin: "0rem" }}>
+                Successfully Registered!!
+              </p>
+              <Navigate to="/"/>
+              </div>
+                
               ) : null}
+
               <button
                 type="submit"
                 style={{
@@ -209,7 +225,7 @@ const Register = () => {
                   color: "white",
                   fontSize: "large",
                   borderRadius: "0.3rem",
-                  marginTop: "0.5rem",
+                  marginTop: "1rem",
                   cursor: "pointer",
                 }}
               >
