@@ -1,6 +1,7 @@
 import "./MentorProfile.css";
 import { Button } from "../components/Button";
 import location from '../imgs/location.png'
+import { Link } from "react-router-dom";
 
 function MentorProfile(props) {
   const elements = props.specialization;
@@ -36,6 +37,11 @@ function MentorProfile(props) {
               {props.btnName}
             </Button>
           </a>
+          <Button buttonStyle="btn--outline" buttonSize="btn--large" >
+            <Link to="/mentorFeedback" style={{textDecoration: "none", color: "white"}}>
+            Give Feedback for {props.name}
+            </Link>
+            </Button>
         </div>
       </div>
     </div>
