@@ -2,7 +2,11 @@ import "./MentorProfile.css";
 import {useState} from 'react';
 import { Button } from "../components/Button";
 import location from '../imgs/location.png'
+
 import { DateTimePickerComponent } from '@syncfusion/ej2-react-calendars';
+
+
+import { Link } from "react-router-dom";
 
 
 function MentorProfile(props) {
@@ -57,6 +61,11 @@ function MentorProfile(props) {
               {props.btnName}
             </Button>
           </a>
+          <Button buttonStyle="btn--outline" buttonSize="btn--large" >
+            <Link to="/mentorFeedback" style={{textDecoration: "none", color: "white"}}>
+            Give Feedback for {props.name}
+            </Link>
+            </Button>
         </div>
       </div>
     </div>

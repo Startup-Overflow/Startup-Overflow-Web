@@ -36,6 +36,8 @@ import BecomeEntrepreneur from "./pages/BecomeEntrepreneur.js";
 import PartnersView from "./pages/PartnersView.jsx";
 import MentorLanding from "./pages/MentorLanding.jsx";
 import InvestorsLanding from "./pages/InvestorsLanding.jsx";
+import MentorFeedback from "./pages/MentorFeedback";
+
 const App = () => {
   return (
     <>
@@ -85,7 +87,11 @@ const App = () => {
         <Route path='/mentorlanding' element={<MentorLanding/>}/>
         <Route path='/partnersview' element={<PartnersView/>}/> 
         <Route path='/investorslanding' element={<InvestorsLanding/>}/>
+
         
+
+        <Route path="/mentorFeedback" element={<MentorFeedback/>} />
+
       </Routes>
     </>
   );
