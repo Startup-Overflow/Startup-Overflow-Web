@@ -5,6 +5,8 @@ import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import SubNav from "../components/SubNav";
 import Host from "../Host";
+import { Navigate } from "react-router-dom";
+
 
 const Container = styled.div`
   width: 100vw;
@@ -110,8 +112,11 @@ const Login = () => {
                   fontSize: "20px",
                 }}
               />
-              {!redirect ? (
-                <p style={{ color: "red", fontSize: "large" }}>{msg}</p>
+              {redirect ? (
+                <div><p style={{ color: "red", fontSize: "large" }}>{msg}</p>
+                <Navigate to="/"/>
+                </div>
+                
               ) : null}
               <input
                 value={password}
