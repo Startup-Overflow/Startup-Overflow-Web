@@ -115,7 +115,7 @@ const Slider = () => {
                         <Title>{item.title}</Title>
                         <Desc>{item.desc}</Desc>
                         <Button>{item.btn}
-                        <Link to={`/${item.connect}`}></Link>
+                        <Link to={`${item.connect}`}></Link>
                         </Button>
                     </InfoContainer>
                 </Slide>

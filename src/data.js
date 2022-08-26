@@ -13,7 +13,7 @@ export const sliderItems = [
       desc: "Get a step by step guide to start a business",
       bg: "f5fafd",
       btn: "Read More",
-      connect: "becomeentrepreneur"
+      connect: "/How%20to%20Start%20a%20Business%20"
     },
     {
       id: 2,
